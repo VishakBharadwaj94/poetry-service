@@ -6,6 +6,11 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from datetime import datetime
 from typing import List, Dict, Any
+import random
+import logging
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 class PoetryDB:
     """Handles interactions with the PoetryDB API."""
@@ -13,13 +18,46 @@ class PoetryDB:
     
     @staticmethod
     def get_authors() -> List[str]:
-        response = requests.get(f"{PoetryDB.BASE_URL}/author")
-        return response.json()['authors']
+        try:
+            response = requests.get(f"{PoetryDB.BASE_URL}/author")
+            if response.status_code == 200:
+                data = response.json()
+                logger.info(f"Successfully fetched {len(data['authors'])} authors")
+                return data['authors']
+            else:
+                logger.error(f"Failed to fetch authors. Status code: {response.status_code}")
+                return []
+        except Exception as e:
+            logger.error(f"Error fetching authors: {str(e)}")
+            return []
 
     @staticmethod
     def get_poems_by_author(author: str) -> List[Dict[str, Any]]:
-        response = requests.get(f"{PoetryDB.BASE_URL}/author/{author}")
-        return response.json()
+        try:
+            encoded_author = requests.utils.quote(author)
+            response = requests.get(f"{PoetryDB.BASE_URL}/author/{encoded_author}")
+            
+            if response.status_code == 200:
+                data = response.json()
+                
+                # Handle both list and dict responses
+                if isinstance(data, list):
+                    poems = data
+                elif isinstance(data, dict):
+                    # If it's a dict with numbered keys, convert to list
+                    poems = [v for k, v in data.items() if isinstance(k, (int, str)) and isinstance(v, dict)]
+                else:
+                    logger.error(f"Unexpected response format for {author}")
+                    return []
+                
+                logger.info(f"Successfully fetched {len(poems)} poems for {author}")
+                return poems
+            else:
+                logger.error(f"Failed to fetch poems for {author}. Status code: {response.status_code}")
+                return []
+        except Exception as e:
+            logger.error(f"Error fetching poems for {author}: {str(e)}")
+            return []
 
 class PoetryService:
     def __init__(self):
@@ -43,86 +81,108 @@ class PoetryService:
 
     def get_poem_analysis(self, poem: Dict[str, Any]) -> str:
         """Get poem analysis from GPT."""
-        prompt = f"""
-        Please analyze this poem:
+        try:
+            prompt = f"""
+            Please analyze this poem:
 
-        Title: {poem['title']}
-        Author: {poem['author']}
+            Title: {poem['title']}
+            Author: {poem['author']}
 
-        {chr(10).join(poem['lines'])}
+            {chr(10).join(poem['lines'])}
 
-        Provide a thorough analysis including:
-        1. Form and structure
-        2. Meter and rhyme scheme
-        3. Key themes and imagery
-        4. Literary devices used
-        5. Historical or biographical context if relevant
+            Provide a thorough analysis including:
+            1. Form and structure
+            2. Meter and rhyme scheme
+            3. Key themes and imagery
+            4. Literary devices used
+            5. Historical or biographical context if relevant
 
-        Format the analysis in a clear, readable way.
-        """
+            Format the analysis in a clear, readable way.
+            """
 
-        response = self.client.chat.completions.create(
-            model="gpt-3.5-turbo",
-            messages=[{"role": "user", "content": prompt}],
-            max_tokens=1000,
-            temperature=0.7
-        )
-        
-        return response.choices[0].message.content
+            response = self.client.chat.completions.create(
+                model="gpt-3.5-turbo",
+                messages=[{"role": "user", "content": prompt}],
+                max_tokens=1000,
+                temperature=0.7
+            )
+            
+            return response.choices[0].message.content
+        except Exception as e:
+            logger.error(f"Error getting poem analysis: {str(e)}")
+            return "Analysis unavailable at this time."
 
     def select_daily_poems(self) -> List[Dict[str, Any]]:
         """Select 3 random poems for today."""
-        import random
-        
         selected_poems = []
-        authors = self.preferred_authors.copy()
-        random.shuffle(authors)
+        available_authors = self.preferred_authors.copy()
+        random.shuffle(available_authors)
         
-        for author in authors:
+        logger.info(f"Attempting to fetch poems from authors: {available_authors}")
+        
+        for author in available_authors:
             poems = self.poetry_db.get_poems_by_author(author)
+            
             if poems:
-                selected_poem = random.choice(poems)
-                selected_poems.append(selected_poem)
+                logger.info(f"Found {len(poems)} poems for {author}")
+                try:
+                    selected_poem = random.choice(poems)
+                    selected_poems.append(selected_poem)
+                    logger.info(f"Selected poem '{selected_poem.get('title', 'Untitled')}' by {author}")
+                except Exception as e:
+                    logger.error(f"Error selecting poem for {author}: {str(e)}")
+                    continue
             
             if len(selected_poems) == 3:
                 break
-                
+        
+        logger.info(f"Successfully selected {len(selected_poems)} poems")
         return selected_poems
 
     def send_poetry_email(self):
         """Send today's poetry email."""
-        poems = self.select_daily_poems()
-        
-        msg = MIMEMultipart()
-        msg['Subject'] = f'Your Daily Poetry Analysis - {datetime.now().strftime("%Y-%m-%d")}'
-        msg['From'] = self.email
-        msg['To'] = "vishak.svec@gmail.com"
-        
-        email_content = []
-        for poem in poems:
-            analysis = self.get_poem_analysis(poem)
+        try:
+            poems = self.select_daily_poems()
             
-            poem_section = f"""
-            {'='*50}
+            if not poems:
+                logger.error("No poems could be retrieved")
+                return
             
-            Poet: {poem['author']}
-            Title: {poem['title']}
+            msg = MIMEMultipart()
+            msg['Subject'] = f'Your Daily Poetry Analysis - {datetime.now().strftime("%Y-%m-%d")}'
+            msg['From'] = self.email
+            msg['To'] = "vishak.svec@gmail.com"
             
-            {chr(10).join(poem['lines'])}
+            email_content = []
+            for poem in poems:
+                analysis = self.get_poem_analysis(poem)
+                
+                poem_section = f"""
+                {'='*50}
+                
+                Poet: {poem['author']}
+                Title: {poem['title']}
+                
+                {chr(10).join(poem['lines'])}
+                
+                Analysis:
+                {analysis}
+                
+                {'='*50}
+                """
+                email_content.append(poem_section)
             
-            Analysis:
-            {analysis}
+            msg.attach(MIMEText('\n'.join(email_content), 'plain'))
             
-            {'='*50}
-            """
-            email_content.append(poem_section)
-        
-        msg.attach(MIMEText('\n'.join(email_content), 'plain'))
-        
-        with smtplib.SMTP(self.smtp_server, self.smtp_port) as server:
-            server.starttls()
-            server.login(self.email, self.password)
-            server.send_message(msg)
+            with smtplib.SMTP(self.smtp_server, self.smtp_port) as server:
+                server.starttls()
+                server.login(self.email, self.password)
+                server.send_message(msg)
+                logger.info("Successfully sent poetry email")
+                
+        except Exception as e:
+            logger.error(f"Error sending poetry email: {str(e)}")
+            raise
 
 def main():
     service = PoetryService()
