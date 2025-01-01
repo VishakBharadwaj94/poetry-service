@@ -1,0 +1,31 @@
+name: Daily Poetry Service
+
+on:
+  schedule:
+    # Runs at 9:00 AM UTC (adjust this based on your preferred time)
+    - cron: '0 9 * * *'
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  send-poetry:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.10'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests openai
+    
+    - name: Run poetry service
+      env:
+        GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+        GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      run: python poetry_service.py
