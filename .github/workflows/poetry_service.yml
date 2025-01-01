@@ -3,7 +3,7 @@ name: Daily Poetry Service
 on:
   schedule:
     # Runs at 9:00 AM UTC (adjust this based on your preferred time)
-    - cron: '0 9 * * *'
+    - cron: '0 23 * * *'
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
