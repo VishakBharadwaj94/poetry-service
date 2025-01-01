@@ -88,19 +88,27 @@ class PoetryService:
 
             {chr(10).join(poem['lines'])}
 
-            Provide a thorough but concise analysis covering:
-            1. Form and structure (including meter and rhyme scheme)
-            2. Key themes and imagery
-            3. Most notable literary devices
-            4. Brief historical or biographical context if relevant
+            Provide a thorough analysis covering:
+            <h3>1. Form and Structure</h3>
+            - Discuss meter, rhyme scheme, and stanza organization.
 
-            Please format the response in clear sections with headings.
+            <h3>2. Key Themes and Imagery</h3>
+            - Highlight recurring motifs and symbolic imagery.
+
+            <h3>3. Literary Devices</h3>
+            - Explain figures of speech such as metaphors, similes, and personification.
+
+            <h3>4. Historical and Biographical Context</h3>
+            - Provide background influences, author’s life events, and interpretations.
+
+            <h3>5. Metaphorical and Thematic Exploration</h3>
+            - Delve deeper into metaphors, allusions, and themes connected to the poet’s broader work.
             """
 
             response = self.client.chat.completions.create(
                 model="gpt-3.5-turbo",
                 messages=[{"role": "user", "content": prompt}],
-                max_tokens=1000,
+                max_tokens=1500,
                 temperature=0.7
             )
             
@@ -114,9 +122,9 @@ class PoetryService:
         formatted_lines = []
         for line in lines:
             if line.strip():
-                formatted_lines.append(f"    {line}")
+                formatted_lines.append(f"&nbsp;&nbsp;&nbsp;&nbsp;{line}")
             else:
-                formatted_lines.append("")
+                formatted_lines.append("<br>")
         return "<br>".join(formatted_lines)
 
     def select_daily_poems(self) -> List[Dict[str, Any]]:
@@ -150,7 +158,7 @@ class PoetryService:
 
         for i, poem in enumerate(poems, 1):
             analysis = self.get_poem_analysis(poem)
-            email_parts.append(f"<h2>{poem['title']} by {poem['author']}</h2><pre>{self.format_poem_text(poem['lines'])}</pre><p><strong>Analysis:</strong></p><p>{analysis}</p>")
+            email_parts.append(f"<h2>{poem['title']} by {poem['author']}</h2><pre>{self.format_poem_text(poem['lines'])}</pre><p><strong>Analysis:</strong></p>{analysis}")
 
         return "<br><br>".join(email_parts)
 
