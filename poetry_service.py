@@ -117,7 +117,7 @@ class PoetryService:
                 formatted_lines.append(f"    {line}")
             else:
                 formatted_lines.append("")
-        return "\n".join(formatted_lines)
+        return "<br>".join(formatted_lines)
 
     def select_daily_poems(self) -> List[Dict[str, Any]]:
         """Select 3 random poems for today."""
@@ -146,13 +146,13 @@ class PoetryService:
         """Create beautifully formatted email content."""
         email_parts = []
         current_date = datetime.now().strftime("%B %d, %Y")
-        email_parts.append(f"Daily Poetry Collection - {current_date}")
+        email_parts.append(f"<h1>Daily Poetry Collection - {current_date}</h1>")
 
         for i, poem in enumerate(poems, 1):
             analysis = self.get_poem_analysis(poem)
-            email_parts.append(f"{poem['title']} by {poem['author']}\n{self.format_poem_text(poem['lines'])}\nAnalysis:\n{analysis}")
+            email_parts.append(f"<h2>{poem['title']} by {poem['author']}</h2><pre>{self.format_poem_text(poem['lines'])}</pre><p><strong>Analysis:</strong></p><p>{analysis}</p>")
 
-        return "\n\n".join(email_parts)
+        return "<br><br>".join(email_parts)
 
     def send_poetry_email(self):
         """Send today's poetry email."""
@@ -164,7 +164,7 @@ class PoetryService:
         msg['Subject'] = f'Your Daily Poetry Collection - {datetime.now().strftime("%B %d")}'
         msg['From'] = self.email
         msg['To'] = self.email
-        msg.attach(MIMEText(self.create_email_content(poems), 'plain'))
+        msg.attach(MIMEText(self.create_email_content(poems), 'html'))
 
         with smtplib.SMTP(self.smtp_server, self.smtp_port) as server:
             server.starttls()
