@@ -12,8 +12,6 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# [Previous PoetryDB class code remains exactly the same]
-
 class PoetryDB:
     """Handles interactions with the PoetryDB API."""
     BASE_URL = "https://poetrydb.org"
@@ -42,11 +40,9 @@ class PoetryDB:
             if response.status_code == 200:
                 data = response.json()
                 
-                # Handle both list and dict responses
                 if isinstance(data, list):
                     poems = data
                 elif isinstance(data, dict):
-                    # If it's a dict with numbered keys, convert to list
                     poems = [v for k, v in data.items() if isinstance(k, (int, str)) and isinstance(v, dict)]
                 else:
                     logger.error(f"Unexpected response format for {author}")
@@ -66,19 +62,19 @@ class PoetryService:
         """Initialize using environment variables for configuration."""
         self.smtp_server = "smtp.gmail.com"
         self.smtp_port = 587
-        self.email = os.environ['GMAIL_ADDRESS']
-        self.password = os.environ['GMAIL_APP_PASSWORD']
+        self.email = os.environ['GMAIL_ADDRESS'].strip().encode('ascii', 'ignore').decode('ascii')
+        self.password = os.environ['GMAIL_APP_PASSWORD'].strip().encode('ascii', 'ignore').decode('ascii')
         self.openai_api_key = os.environ['OPENAI_API_KEY']
         self.client = OpenAI(api_key=self.openai_api_key)
         self.poetry_db = PoetryDB()
-        
-        # Preferred authors - can be customized
-        self.preferred_authors = [
-            "Emily Dickinson",
-            "Robert Frost",
-            "William Shakespeare",
-            "Walt Whitman",
-            "William Wordsworth"
+
+        # List of poets (randomly selected later)
+        self.all_authors = [
+            "Edgar Allan Poe", "Elizabeth Barrett Browning", "Emily Bronte",
+            "Emily Dickinson", "Christina Rossetti", "Matthew Arnold",
+            "Robert Browning", "Alfred, Lord Tennyson", "Percy Bysshe Shelley",
+            "William Wordsworth", "Wilfred Owen", "Rupert Brooke",
+            "Joyce Kilmer", "Paul Laurence Dunbar", "Edward Thomas"
         ]
 
     def get_poem_analysis(self, poem: Dict[str, Any]) -> str:
@@ -92,14 +88,13 @@ class PoetryService:
 
             {chr(10).join(poem['lines'])}
 
-            Provide a thorough analysis including:
-            1. Form and structure
-            2. Meter and rhyme scheme
-            3. Key themes and imagery
-            4. Literary devices used
-            5. Historical or biographical context if relevant
+            Provide a thorough but concise analysis covering:
+            1. Form and structure (including meter and rhyme scheme)
+            2. Key themes and imagery
+            3. Most notable literary devices
+            4. Brief historical or biographical context if relevant
 
-            Format the analysis in a clear, readable way.
+            Please format the response in clear sections with headings.
             """
 
             response = self.client.chat.completions.create(
@@ -114,83 +109,67 @@ class PoetryService:
             logger.error(f"Error getting poem analysis: {str(e)}")
             return "Analysis unavailable at this time."
 
+    def format_poem_text(self, lines: List[str]) -> str:
+        """Format poem with proper indentation and spacing."""
+        formatted_lines = []
+        for line in lines:
+            if line.strip():
+                formatted_lines.append(f"    {line}")
+            else:
+                formatted_lines.append("")
+        return "\n".join(formatted_lines)
+
     def select_daily_poems(self) -> List[Dict[str, Any]]:
         """Select 3 random poems for today."""
         selected_poems = []
-        available_authors = self.preferred_authors.copy()
-        random.shuffle(available_authors)
-        
-        logger.info(f"Attempting to fetch poems from authors: {available_authors}")
-        
+        available_authors = random.sample(self.all_authors, 3)
+
+        logger.info(f"Selected random authors: {available_authors}")
+
         for author in available_authors:
             poems = self.poetry_db.get_poems_by_author(author)
             
             if poems:
-                logger.info(f"Found {len(poems)} poems for {author}")
                 try:
                     selected_poem = random.choice(poems)
                     selected_poems.append(selected_poem)
-                    logger.info(f"Selected poem '{selected_poem.get('title', 'Untitled')}' by {author}")
                 except Exception as e:
                     logger.error(f"Error selecting poem for {author}: {str(e)}")
                     continue
-            
+
             if len(selected_poems) == 3:
                 break
-        
-        logger.info(f"Successfully selected {len(selected_poems)} poems")
+
         return selected_poems
+
+    def create_email_content(self, poems: List[Dict[str, Any]]) -> str:
+        """Create beautifully formatted email content."""
+        email_parts = []
+        current_date = datetime.now().strftime("%B %d, %Y")
+        email_parts.append(f"Daily Poetry Collection - {current_date}")
+
+        for i, poem in enumerate(poems, 1):
+            analysis = self.get_poem_analysis(poem)
+            email_parts.append(f"{poem['title']} by {poem['author']}\n{self.format_poem_text(poem['lines'])}\nAnalysis:\n{analysis}")
+
+        return "\n\n".join(email_parts)
 
     def send_poetry_email(self):
         """Send today's poetry email."""
-        try:
-            poems = self.select_daily_poems()
-            
-            if not poems:
-                logger.error("No poems could be retrieved")
-                return
-            
-            msg = MIMEMultipart()
-            msg['Subject'] = f'Your Daily Poetry Analysis - {datetime.now().strftime("%Y-%m-%d")}'
-            msg['From'] = self.email.strip()  # Remove any whitespace
-            msg['To'] = "vishak.svec@gmail.com".strip()
-            
-            email_content = []
-            for poem in poems:
-                analysis = self.get_poem_analysis(poem)
-                
-                poem_section = f"""
-                {'='*50}
-                
-                Poet: {poem['author']}
-                Title: {poem['title']}
-                
-                {chr(10).join(poem['lines'])}
-                
-                Analysis:
-                {analysis}
-                
-                {'='*50}
-                """
-                email_content.append(poem_section)
-            
-            # Clean the content and ensure proper encoding
-            clean_content = '\n'.join(email_content).encode('ascii', 'ignore').decode('ascii')
-            msg.attach(MIMEText(clean_content, 'plain', 'utf-8'))
-            
-            with smtplib.SMTP(self.smtp_server, self.smtp_port) as server:
-                server.starttls()
-                server.login(self.email, self.password)
-                server.send_message(msg)
-                logger.info("Successfully sent poetry email")
-                
-        except Exception as e:
-            logger.error(f"Error sending poetry email: {str(e)}")
-            raise
+        poems = self.select_daily_poems()
+        if not poems:
+            return
 
-def main():
-    service = PoetryService()
-    service.send_poetry_email()
+        msg = MIMEMultipart()
+        msg['Subject'] = f'Your Daily Poetry Collection - {datetime.now().strftime("%B %d")}'
+        msg['From'] = self.email
+        msg['To'] = "recipient@example.com"
+        msg.attach(MIMEText(self.create_email_content(poems), 'plain'))
+
+        with smtplib.SMTP(self.smtp_server, self.smtp_port) as server:
+            server.starttls()
+            server.login(self.email, self.password)
+            server.send_message(msg)
 
 if __name__ == "__main__":
-    main()
+    PoetryService().send_poetry_email()
