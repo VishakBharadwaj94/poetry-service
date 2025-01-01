@@ -163,7 +163,7 @@ class PoetryService:
         msg = MIMEMultipart()
         msg['Subject'] = f'Your Daily Poetry Collection - {datetime.now().strftime("%B %d")}'
         msg['From'] = self.email
-        msg['To'] = "recipient@example.com"
+        msg['To'] = self.email
         msg.attach(MIMEText(self.create_email_content(poems), 'plain'))
 
         with smtplib.SMTP(self.smtp_server, self.smtp_port) as server:
