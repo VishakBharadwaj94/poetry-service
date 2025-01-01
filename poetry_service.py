@@ -12,6 +12,8 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+# [Previous PoetryDB class code remains exactly the same]
+
 class PoetryDB:
     """Handles interactions with the PoetryDB API."""
     BASE_URL = "https://poetrydb.org"
@@ -150,8 +152,8 @@ class PoetryService:
             
             msg = MIMEMultipart()
             msg['Subject'] = f'Your Daily Poetry Analysis - {datetime.now().strftime("%Y-%m-%d")}'
-            msg['From'] = self.email
-            msg['To'] = "vishak.svec@gmail.com"
+            msg['From'] = self.email.strip()  # Remove any whitespace
+            msg['To'] = "vishak.svec@gmail.com".strip()
             
             email_content = []
             for poem in poems:
@@ -172,7 +174,9 @@ class PoetryService:
                 """
                 email_content.append(poem_section)
             
-            msg.attach(MIMEText('\n'.join(email_content), 'plain'))
+            # Clean the content and ensure proper encoding
+            clean_content = '\n'.join(email_content).encode('ascii', 'ignore').decode('ascii')
+            msg.attach(MIMEText(clean_content, 'plain', 'utf-8'))
             
             with smtplib.SMTP(self.smtp_server, self.smtp_port) as server:
                 server.starttls()
