@@ -161,7 +161,14 @@ class PoetryService:
         formatted_lines = []
         for line in lines:
             if line.strip():
-                formatted_lines.append(f"&nbsp;&nbsp;&nbsp;&nbsp;{line}")
+                # Preserve any existing indentation while wrapping in span
+                leading_spaces = len(line) - len(line.lstrip())
+                if leading_spaces > 0:
+                    space_str = "&nbsp;" * leading_spaces
+                    formatted_line = f"{space_str}{line.lstrip()}"
+                else:
+                    formatted_line = line
+                formatted_lines.append(f'<span class="poem-line">{formatted_line}</span>')
             else:
                 formatted_lines.append("<br>")
         return "<br>".join(formatted_lines)
@@ -214,7 +221,7 @@ class PoetryService:
                 font-family: Georgia, 'Times New Roman', Times, serif;
                 line-height: 1.6;
                 color: #374151;
-                max-width: 800px;
+                max-width: 650px;
                 margin: 0 auto;
                 padding: 20px;
                 background-color: #f8fafc;
@@ -273,6 +280,16 @@ class PoetryService:
                 line-height: 1.8;
                 white-space: pre-wrap;
                 font-size: 1.15rem;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+            
+            .poem-line {
+                display: block;
+                white-space: nowrap;
+                min-width: min-content;
+                padding-left: 2rem;
+                text-indent: -2rem;
             }
 
             /* Analysis section */
