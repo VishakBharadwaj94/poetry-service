@@ -166,6 +166,29 @@ class PoetryService:
                 formatted_lines.append("<br>")
         return "<br>".join(formatted_lines)
 
+    def select_daily_poems(self) -> List[Dict[str, Any]]:
+        """Select 3 random poems for today."""
+        selected_poems = []
+        available_authors = random.sample(self.all_authors, 3)
+
+        logger.info(f"Selected random authors: {available_authors}")
+
+        for author in available_authors:
+            poems = self.poetry_db.get_poems_by_author(author)
+            
+            if poems:
+                try:
+                    selected_poem = random.choice(poems)
+                    selected_poems.append(selected_poem)
+                except Exception as e:
+                    logger.error(f"Error selecting poem for {author}: {str(e)}")
+                    continue
+
+            if len(selected_poems) == 3:
+                break
+
+        return selected_poems
+
     def get_writing_prompt(self) -> Dict[str, str]:
         """Generate a random writing prompt using poetic forms."""
         form = random.choice(self.poetic_forms)
