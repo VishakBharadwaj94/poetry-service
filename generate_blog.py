@@ -78,14 +78,26 @@ class PoetryBlogGenerator:
 
             {chr(10).join(poem['lines'])}
 
-            Provide a thorough analysis covering:
-            1. Form, Structure, meter and rhyme
-            2. Key Themes and Imagery
-            3. Literary Devices
-            4. Historical and Personal Context
-            5. Deep Reading
+            Provide a thorough analysis using exactly these section headings and format:
 
-            Please write in an engaging, accessible style while maintaining analytical depth.
+            # Form, Structure, Meter, and Rhyme
+            [Your analysis of form, structure, meter, and rhyme here]
+
+            # Themes and Imagery
+            [Your analysis of themes and imagery here]
+
+            # Literary Devices
+            [Your analysis of literary devices here]
+
+            # Historical and Personal Context
+            [Your analysis of historical and personal context here]
+
+            # Deep Reading
+            [Your deeper analysis here]
+
+            Make each section thorough and detailed. Use line references and specific examples.
+            Do not use asterisks for emphasis - use proper markdown headers with # symbols.
+            Write in an engaging, accessible style while maintaining analytical depth.
             """
 
             response = self.client.chat.completions.create(
@@ -95,7 +107,21 @@ class PoetryBlogGenerator:
                 temperature=0.7
             )
             
-            return response.choices[0].message.content
+            # Process the response to ensure consistent formatting
+            analysis = response.choices[0].message.content
+            
+            # Replace any remaining asterisks with proper markdown
+            analysis = analysis.replace('**', '')
+            
+            # Ensure section headers are properly formatted
+            sections = ['Form, Structure, Meter, and Rhyme', 'Themes and Imagery', 
+                    'Literary Devices', 'Historical and Personal Context', 'Deep Reading']
+            
+            for section in sections:
+                analysis = analysis.replace(f'# {section}', f'### {section}')
+                
+            return analysis
+
         except Exception as e:
             logger.error(f"Error getting poem analysis: {str(e)}")
             return "Analysis unavailable at this time."

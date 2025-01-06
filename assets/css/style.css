@@ -1,123 +1,30 @@
-/* Base styles */
-:root {
-    --primary-color: #1a365d;
-    --secondary-color: #2c5282;
-    --background-color: #ffffff;
-    --text-color: #2d3748;
-    --border-color: #e2e8f0;
-    --link-color: #2b6cb0;
-    --header-bg: #f7fafc;
-    --code-bg: #f8fafc;
-    --poetry-font: "Crimson Pro", Georgia, serif;
-    --heading-font: "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --primary-color: #90cdf4;
-        --secondary-color: #63b3ed;
-        --background-color: #1a202c;
-        --text-color: #e2e8f0;
-        --border-color: #2d3748;
-        --link-color: #90cdf4;
-        --header-bg: #2d3748;
-        --code-bg: #2d3748;
-    }
-}
-
-body {
-    font-family: var(--poetry-font);
-    line-height: 1.8;
-    color: var(--text-color);
-    background-color: var(--background-color);
-    margin: 0;
-    padding: 0;
-    font-size: 1.125rem;
-}
-
-.container {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-}
-
-/* Header styles */
-.site-header {
-    background-color: var(--header-bg);
-    border-bottom: 1px solid var(--border-color);
-    padding: 1.5rem 0;
-    margin-bottom: 3rem;
-}
-
-.site-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.site-title {
+/* Analysis section styles */
+.post-content h3 {
     font-family: var(--heading-font);
-    font-size: 1.75rem;
-    font-weight: 700;
     color: var(--primary-color);
-    text-decoration: none;
-    letter-spacing: -0.02em;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 2rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--border-color);
 }
 
-.site-nav a {
-    color: var(--secondary-color);
-    text-decoration: none;
-    margin-left: 1.5rem;
-    font-family: var(--heading-font);
+.post-content h3 + p {
+    margin-top: 1rem;
 }
 
-/* Post styles */
-.post {
-    margin-bottom: 6rem;
-}
-
-.post-header {
-    margin-bottom: 3rem;
-    text-align: center;
-}
-
-.post-title {
-    font-family: var(--heading-font);
-    font-size: 2.5rem;
-    color: var(--primary-color);
-    margin: 0.5rem 0 1.5rem;
-    letter-spacing: -0.03em;
-    line-height: 1.2;
-}
-
-.post-meta {
-    color: var(--secondary-color);
-    font-size: 1.1rem;
-    font-style: italic;
-}
-
-.post-content {
-    font-size: 1.2rem;
+.post-content p {
+    margin-bottom: 1.5rem;
     line-height: 1.8;
 }
 
-/* Poetry styles */
+/* Poem section styles */
 .post-content h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
     font-size: 2rem;
     margin: 3rem 0 1.5rem;
-    letter-spacing: -0.02em;
-    line-height: 1.3;
-}
-
-.analysis-header {
-    font-family: var(--heading-font);
-    font-size: 1.75rem;
-    color: var(--secondary-color);
-    margin: 3rem 0 2rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--border-color);
+    text-align: center;
 }
 
 .post-content pre {
@@ -131,65 +38,4 @@ body {
     font-size: 1.2rem;
     line-height: 1.8;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-}
-
-/* Writing prompt section */
-.writing-prompt {
-    background-color: var(--code-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 2rem;
-    margin: 4rem 0;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-}
-
-.writing-prompt h2 {
-    font-family: var(--heading-font);
-    margin-top: 0;
-    color: var(--primary-color);
-}
-
-/* Navigation */
-.post-navigation {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 4rem;
-    padding-top: 2rem;
-    border-top: 1px solid var(--border-color);
-    font-family: var(--heading-font);
-}
-
-.post-navigation a {
-    color: var(--link-color);
-    text-decoration: none;
-    font-weight: 500;
-}
-
-/* Typography enhancements */
-strong {
-    color: var(--primary-color);
-}
-
-p {
-    margin: 1.5rem 0;
-}
-
-/* Responsive design */
-@media (max-width: 640px) {
-    body {
-        font-size: 1rem;
-    }
-
-    .post-title {
-        font-size: 2rem;
-    }
-
-    .post-content pre {
-        padding: 1.5rem;
-        font-size: 1.1rem;
-    }
-
-    .container {
-        padding: 0 1rem;
-    }
 }

@@ -8,7 +8,7 @@ layout: default
     </header>
 
     <div class="post-content">
-        {{ content | replace: '# ', '## ' | replace: 'Form and Structure:', '**Form and Structure:**' | replace: 'Key Themes and Imagery:', '**Key Themes and Imagery:**' | replace: 'Literary Devices:', '**Literary Devices:**' | replace: 'Historical and Personal Context:', '**Historical and Personal Context:**' | replace: 'Deep Reading:', '**Deep Reading:**' | replace: 'Analysis', '<div class="analysis-header">Analysis</div>' }}
+        {{ content }}
     </div>
 
     {% if site.posts.size > 1 %}
