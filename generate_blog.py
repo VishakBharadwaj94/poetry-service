@@ -60,31 +60,11 @@ class PoetryBlogGenerator:
             "Joyce Kilmer", "Paul Laurence Dunbar", "Edward Thomas"
         ]
 
+        # Basic poetic forms for reference
         self.poetic_forms = [
-            {
-                "name": "Sonnet",
-                "structure": "14 lines, typically in iambic pentameter",
-                "rhyme_scheme": "Various schemes including Shakespearean (ABAB CDCD EFEF GG) or Petrarchan (ABBAABBA CDECDE)",
-                "example_prompt": "Write about a transformative moment in nature"
-            },
-            {
-                "name": "Haiku",
-                "structure": "3 lines with syllables 5-7-5",
-                "rhyme_scheme": "No specific rhyme scheme",
-                "example_prompt": "Capture a fleeting seasonal moment"
-            },
-            {
-                "name": "Villanelle",
-                "structure": "19 lines with repeating refrains",
-                "rhyme_scheme": "ABA ABA ABA ABA ABA ABAA",
-                "example_prompt": "Express an obsessive thought or memory"
-            },
-            {
-                "name": "Ballad",
-                "structure": "Quatrains with alternating 4-beat and 3-beat lines",
-                "rhyme_scheme": "ABCB",
-                "example_prompt": "Tell a story of love or loss"
-            }
+            "Sonnet", "Haiku", "Villanelle", "Ballad", "Free Verse", 
+            "Ghazal", "Tanka", "Cinquain", "Limerick", "Ode",
+            "Pantoum", "Rondeau", "Terza Rima", "Triolet"
         ]
 
     def get_poem_analysis(self, poem: Dict[str, Any]) -> str:
@@ -99,7 +79,7 @@ class PoetryBlogGenerator:
             {chr(10).join(poem['lines'])}
 
             Provide a thorough analysis covering:
-            1. Form and Structure
+            1. Form, Structure, meter and rhyme
             2. Key Themes and Imagery
             3. Literary Devices
             4. Historical and Personal Context
@@ -120,6 +100,59 @@ class PoetryBlogGenerator:
             logger.error(f"Error getting poem analysis: {str(e)}")
             return "Analysis unavailable at this time."
 
+    def get_writing_prompt(self) -> Dict[str, str]:
+        """Generate a creative writing prompt using GPT."""
+        try:
+            form = random.choice(self.poetic_forms)
+            
+            prompt = f"""
+            Create an inspiring poetry writing prompt. Use this poetic form: {form}
+
+            Return the response in this exact JSON format:
+            {{
+                "form": "{form}",
+                "structure": "Brief description of the form's structure",
+                "rhyme_scheme": "Description of rhyme scheme if applicable",
+                "prompt": "A creative and specific writing prompt"
+            }}
+
+            Make the prompt specific, evocative, and imaginative. Focus on sensory details, emotions, or narrative moments.
+            The prompt should inspire both beginning and experienced poets.
+            """
+
+            response = self.client.chat.completions.create(
+                model="gpt-3.5-turbo",
+                messages=[{"role": "user", "content": prompt}],
+                max_tokens=500,
+                temperature=0.9
+            )
+            
+            # Parse the response as JSON
+            try:
+                prompt_data = json.loads(response.choices[0].message.content)
+                required_keys = ["form", "structure", "rhyme_scheme", "prompt"]
+                if not all(key in prompt_data for key in required_keys):
+                    raise ValueError("Missing required keys in prompt data")
+                return prompt_data
+            except json.JSONDecodeError as e:
+                logger.error(f"Error parsing prompt JSON: {str(e)}")
+                # Fallback to basic prompt if JSON parsing fails
+                return {
+                    "form": form,
+                    "structure": "Traditional form",
+                    "rhyme_scheme": "Variable",
+                    "prompt": "Write about a meaningful personal experience"
+                }
+                
+        except Exception as e:
+            logger.error(f"Error getting writing prompt: {str(e)}")
+            return {
+                "form": "Free Verse",
+                "structure": "No fixed structure",
+                "rhyme_scheme": "No fixed rhyme scheme",
+                "prompt": "Write about something that moved you today"
+            }
+
     def select_daily_poems(self) -> List[Dict[str, Any]]:
         """Select 3 random poems for today."""
         selected_poems = []
@@ -135,16 +168,6 @@ class PoetryBlogGenerator:
                 break
 
         return selected_poems
-
-    def get_writing_prompt(self) -> Dict[str, str]:
-        """Generate a random writing prompt using poetic forms."""
-        form = random.choice(self.poetic_forms)
-        return {
-            "form": form["name"],
-            "structure": form["structure"],
-            "rhyme_scheme": form["rhyme_scheme"],
-            "prompt": form["example_prompt"]
-        }
 
     def generate_post(self, poems: List[Dict[str, Any]]) -> Dict[str, Any]:
         """Generate a blog post with poems and analyses."""
