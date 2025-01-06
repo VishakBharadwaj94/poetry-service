@@ -1,0 +1,21 @@
+{
+  "date": "2025-01-06",
+  "poems": [
+    {
+      "title": "Sonnet 09",
+      "author": "Elizabeth Barrett Browning",
+      "lines": [
+        "Can it be right to give what I can give?",
+        "To let thee sit beneath the fall of tears",
+        "As salt as mine, and hear the sighing years"
+      ],
+      "analysis": "Form and Structure: This sonnet follows..."
+    }
+  ],
+  "writing_prompt": {
+    "name": "Haiku",
+    "structure": "3 lines with syllables 5-7-5",
+    "rhyme_scheme": "No specific rhyme scheme",
+    "prompt": "Capture a fleeting seasonal moment"
+  }
+}
