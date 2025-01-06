@@ -104,14 +104,14 @@ class PoetryGenerator:
         }
 
         # Ensure the data directory exists
-        os.makedirs("public/data", exist_ok=True)
+        os.makedirs("data", exist_ok=True)
 
         # Save the daily content
-        with open("public/data/daily-poems.json", "w") as f:
+        with open("data/daily-poems.json", "w") as f:
             json.dump(daily_content, f, indent=2)
 
         # Save to archive with date
-        archive_path = f"public/data/archive/{daily_content['date']}.json"
+        archive_path = f"data/archive/{daily_content['date']}.json"
         os.makedirs(os.path.dirname(archive_path), exist_ok=True)
         with open(archive_path, "w") as f:
             json.dump(daily_content, f, indent=2)
