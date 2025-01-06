@@ -1,172 +1,161 @@
-# Daily Poetry Analysis Service
+# Daily Poetry Blog Generator
 
-A GitHub Actions-based service that sends you three poems daily via email, complete with AI-powered analysis. This service uses PoetryDB for poems and OpenAI's GPT for in-depth literary analysis.
+An automated poetry blog that publishes daily poems with AI-powered analysis using GitHub Actions and GitHub Pages. Each day, the system selects three random poems from classic authors, generates detailed literary analysis using GPT-3.5, and creates a new blog post with a creative writing prompt.
 
 ## Features
 
-- Automatically sends 3 poems daily at a specified time
-- Sources poems from PoetryDB's extensive collection
-- Uses GPT-3.5-turbo for detailed analysis including:
-  - Form and structure
-  - Meter and rhyme scheme
-  - Key themes and imagery
-  - Literary devices
-  - Historical context
-- Configurable preferred authors list
-- Runs automatically via GitHub Actions
+- Automated daily posts featuring three carefully selected poems
+- Detailed AI-powered analysis of each poem's structure, themes, and literary devices
+- Daily writing prompts to inspire creativity
+- Responsive Jekyll-based blog design
+- Dark mode support
+- Fully automated through GitHub Actions
+- Free hosting with GitHub Pages
 
-## Prerequisites
+## Setup
 
-To use this service, you'll need:
-- A GitHub account (free)
-- A Gmail account
-- A Gmail app-specific password
-- An OpenAI account with:
-  - A valid credit card on file
-  - API access enabled
-  - An API key (new accounts receive $5 in free credit)
+### Prerequisites
 
-Note: OpenAI requires a credit card for API access even if you plan to only use the free credit. The card will not be charged until you exceed the free credit limit.
+- GitHub account
+- OpenAI API key
+- Basic familiarity with Git and GitHub
 
-## Costs
+### Installation
 
-The service is very cost-effective:
-- GPT-3.5-turbo costs approximately $0.0015 per poem analysis
-- 3 poems per day = $0.0045 daily
-- Approximately $0.14 per month
-- First month likely free with OpenAI's $5 starter credit
-- Your credit card will only be charged if you exceed the free credit
+1. Fork this repository or create a new one using it as a template
 
-## Setup Instructions
-
-### 1. Fork/Clone the Repository
+2. Clone your repository locally:
 ```bash
-git clone https://github.com/yourusername/poetry-service.git
-cd poetry-service
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
 ```
 
-### 2. Set Up OpenAI Account and Get API Key
-1. Go to https://platform.openai.com/
-2. Sign up or log in
-3. Add a valid credit card to your account
-4. Enable API access in your account settings
-5. Click your profile icon → "View API keys"
-6. Click "Create new secret key"
-7. Copy the key (save it - you won't be able to see it again)
+3. Configure GitHub Pages:
+   - Go to your repository settings
+   - Navigate to "Pages" section
+   - Select the main/master branch as source
+   - Choose root directory as publishing source
+   - Save the settings
 
-### 3. Create Gmail App Password
-1. Go to your Google Account settings
-2. Navigate to Security → 2-Step Verification → App passwords
-3. Create a new app password
-4. Save this password for the next step
+4. Set up required secrets:
+   - Go to repository settings
+   - Navigate to "Secrets and variables" → "Actions"
+   - Add new repository secret:
+     - Name: `OPENAI_API_KEY`
+     - Value: Your OpenAI API key
 
-### 4. Configure GitHub Secrets
-Add the following secrets to your repository (Settings → Secrets and variables → Actions):
+5. Update `_config.yml`:
+   - Replace `your-username` with your GitHub username
+   - Replace `your-repo-name` with your repository name
 
-- `GMAIL_ADDRESS`: Your Gmail address
-- `GMAIL_APP_PASSWORD`: The app-specific password you created
-- `OPENAI_API_KEY`: Your OpenAI API key
+6. Push your changes:
+```bash
+git add .
+git commit -m "Initial setup"
+git push origin main
+```
 
-### 5. Customize Settings (Optional)
+### Local Development
 
-#### Modify Preferred Authors
-Edit the `preferred_authors` list in `poetry_service.py`:
+1. Install required Python packages:
+```bash
+pip install requests openai
+```
+
+2. Set up environment variables:
+```bash
+export OPENAI_API_KEY='your-api-key'
+```
+
+3. Run the blog generator manually:
+```bash
+python generate_blog.py
+```
+
+4. To test the Jekyll site locally:
+```bash
+gem install bundler jekyll
+bundle install
+bundle exec jekyll serve
+```
+
+## How It Works
+
+### Daily Workflow
+
+1. GitHub Actions triggers the workflow daily at midnight UTC
+2. The script selects three random poems from the configured list of authors
+3. For each poem:
+   - Fetches the full text from PoetryDB
+   - Generates detailed analysis using GPT-3.5
+4. Creates a new markdown post in `_posts/` directory
+5. Commits and pushes changes to the repository
+6. GitHub Pages automatically builds and deploys the updated site
+
+### File Structure
+
+```
+your-repo/
+├── _posts/                    # Generated blog posts
+├── .github/
+│   └── workflows/
+│       └── daily-poetry.yml   # GitHub Actions workflow
+├── _layouts/                  # Jekyll layouts
+├── _includes/                 # Jekyll includes
+├── assets/
+│   └── css/                  # Custom styles
+├── generate_blog.py          # Main script
+├── _config.yml               # Jekyll configuration
+└── README.md                 # This file
+```
+
+### Customization
+
+#### Adding New Authors
+
+Edit the `all_authors` list in `generate_blog.py`:
+
 ```python
-self.preferred_authors = [
+self.all_authors = [
+    "Edgar Allan Poe",
     "Emily Dickinson",
-    "Robert Frost",
-    "William Shakespeare",
-    # Add or remove authors as desired
+    # Add more authors...
 ]
 ```
 
-#### Change Email Schedule
-Edit the cron schedule in `.github/workflows/poetry_service.yml`:
-```yaml
-on:
-  schedule:
-    - cron: '0 9 * * *'  # Runs at 9:00 AM UTC
+#### Modifying Poetry Forms
+
+Edit the `poetic_forms` list in `generate_blog.py` to add or modify writing prompt templates:
+
+```python
+self.poetic_forms = [
+    {
+        "name": "Sonnet",
+        "structure": "14 lines...",
+        "rhyme_scheme": "ABAB...",
+        "example_prompt": "Write about..."
+    },
+    # Add more forms...
+]
 ```
-
-For help with cron syntax, visit [crontab.guru](https://crontab.guru/).
-
-### 6. Deploy
-Push your changes to GitHub:
-```bash
-git add .
-git commit -m "Configure poetry service"
-git push
-```
-
-## Usage
-
-The service will automatically run daily according to your configured schedule. You can also:
-
-1. Run manually through GitHub:
-   - Go to your repository
-   - Click "Actions"
-   - Select "Daily Poetry Service"
-   - Click "Run workflow"
-
-2. Monitor runs:
-   - Check the Actions tab in your repository
-   - View logs for any failures or issues
-   - Monitor OpenAI usage in your OpenAI dashboard
-
-## Troubleshooting
-
-### Common Issues
-
-1. **OpenAI API Issues**
-   - Verify credit card is valid and not expired
-   - Check if you've exceeded free credit limit
-   - Ensure API access is enabled in your account
-   - Verify API key is valid and properly set in secrets
-
-2. **Emails not sending**
-   - Check if Gmail app password is correct
-   - Verify email address in secrets
-   - Check GitHub Actions logs for errors
-
-3. **No poems being fetched**
-   - Ensure preferred authors exist in PoetryDB
-   - Check PoetryDB API status
-   - Verify internet connectivity in Actions logs
-
-### Getting Help
-
-If you encounter issues:
-1. Check the Actions logs for error messages
-2. Review the Issues tab in this repository
-3. Create a new issue with:
-   - Description of the problem
-   - Relevant logs (without sensitive information)
-   - Steps to reproduce
 
 ## Contributing
 
-Contributions are welcome! Please:
+Contributions are welcome! Please feel free to submit a Pull Request.
+
 1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ## License
 
-This project is licensed under the MIT License - see [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgments
 
-- [PoetryDB](https://poetrydb.org/) for providing the poetry database
-- [OpenAI](https://openai.com/) for GPT API
-- All the poets whose works are included
-
-## Security Notes
-
-- Never commit sensitive information like API keys or passwords
-- Always use GitHub secrets for credentials
-- Regularly rotate your Gmail app password
-- Monitor GitHub Actions usage if using a private repository
-- Keep an eye on OpenAI API usage and set usage limits if needed
-- Ensure your OpenAI account has billing notifications enabled
-- Review OpenAI's billing dashboard regularly to avoid unexpected charges
+- Poetry data provided by [PoetryDB](https://poetrydb.org/)
+- Analysis powered by OpenAI's GPT-3.5
+- Built with Jekyll and GitHub Pages
+- Inspired by the classic works of renowned poets

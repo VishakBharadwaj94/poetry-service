@@ -1,0 +1,26 @@
+title: Daily Poetry Blog
+description: A daily collection of poetry analysis and writing prompts
+baseurl: "/poetry-service"  # Replace with your repository name
+url: "https://VishakBharadwaj94.github.io"  # Replace with your GitHub username
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - generate_blog.py
+  - README.md
+  - .github
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:title/
