@@ -5,132 +5,157 @@ date: 2025-01-06 00:00:00 +0000
 categories: ['poetry', 'daily']
 ---
 
-## Spirits Of The Dead by Edgar Allan Poe
+## Little Brown Baby by Paul Laurence Dunbar
 
 ```
-Thy soul shall find itself alone
-'Mid dark thoughts of the gray tombstone
-Not one, of all the crowd, to pry
-Into thine hour of secrecy.
-Be silent in that solitude
-  Which is not loneliness--for then
-The spirits of the dead who stood
-  In life before thee are again
-In death around thee--and their will
-Shall overshadow thee: be still.
-The night--tho' clear--shall frown--
-And the stars shall not look down
-From their high thrones in the Heaven,
-With light like Hope to mortals given--
-But their red orbs, without beam,
-To thy weariness shall seem
-As a burning and a fever
-Which would cling to thee forever.
-Now are thoughts thou shalt not banish--
-Now are visions ne'er to vanish--
-From thy spirit shall they pass
-No more--like dew-drops from the grass.
-The breeze--the breath of God--is still--
-And the mist upon the hill
-Shadowy--shadowy--yet unbroken,
-  Is a symbol and a token--
-  How it hangs upon the trees,
-  A mystery of mysteries!
+Little brown baby wif spa'klin' eyes,
+Come to yo' pappy an' set on his knee.
+What you been doin', suh -- makin' san' pies?
+Look at dat bib -- you's es du'ty ez me.
+Look at dat mouf -- dat's merlasses, I bet;
+Come hyeah, Maria, an' wipe off his han's.
+Bees gwine to ketch you an' eat you up yit,
+Bein' so sticky an sweet -- goodness lan's!
+Little brown baby wif spa'klin' eyes,
+Who's pappy's darlin' an' who's pappy's chile?
+Who is it all de day nevah once tries
+Fu' to be cross, er once loses dat smile?
+Whah did you git dem teef? My, you's a scamp!
+Whah did dat dimple come f'om in yo' chin?
+Pappy do' know you -- I b'lieves you's a tramp;
+Mammy, dis hyeah's some ol' straggler got in!
+
+Let's th'ow him outen de do' in de san',
+We do' want stragglers a-layin' 'roun' hyeah;
+Let's gin him 'way to de big buggah-man;
+I know he's hidin' erroun' hyeah right neah.
+Buggah-man, buggah-man, come in de do',
+Hyeah's a bad boy you kin have fu' to eat.
+Mammy an' pappy do' want him no mo',
+Swaller him down f'om his haid to his feet!
+
+Dah, now, I t'ought dat you'd hug me up close.
+Go back, ol' buggah, you sha'n't have dis boy.
+He ain't no tramp, ner no straggler, of co'se;
+He's pappy's pa'dner an' play-mate an' joy.
+Come to you' pallet now -- go to yo' res';
+Wisht you could allus know ease an' cleah skies;
+Wisht you could stay jes' a chile on my breas'--
+Little brown baby wif spa'klin' eyes!
 ```
 
 ### Analysis
 
 Form and Structure:
-The poem "Spirits of the Dead" by Edgar Allan Poe is written in the form of a ballad, with a consistent rhyme scheme of ABAB. It consists of three stanzas, each with a different number of lines, contributing to the overall eerie and haunting tone of the poem. The irregular structure adds to the sense of unease and mystery that pervades the poem.
+"Little Brown Baby" by Paul Laurence Dunbar is a poem written in dialect, reflecting the African American vernacular of the time. The poem consists of three stanzas, each with eight lines. The rhyme scheme is AABBCCDD, giving the poem a playful and rhythmic quality. The structure helps to convey the intimate and affectionate relationship between the speaker and the little brown baby.
 
 Key Themes and Imagery:
-The key themes in the poem revolve around death, solitude, and the presence of spirits. Poe explores the idea of being alone with one's thoughts in the darkness of death, surrounded by the spirits of the deceased. The imagery in the poem is dark and atmospheric, with references to tombstones, shadows, and mist. The use of vivid and unsettling imagery creates a sense of foreboding and unease throughout the poem.
+The key themes in the poem include love, family, innocence, and the joy of childhood. The speaker expresses his love and affection for the little brown baby, admiring his innocence and playfulness. The imagery in the poem is vivid and sensory, with descriptions of the baby's sparkling eyes, sticky hands covered in molasses, and mischievous smile. The imagery creates a sense of warmth and tenderness, emphasizing the bond between the speaker and the child.
 
 Literary Devices:
-Poe employs a variety of literary devices in the poem to enhance its haunting atmosphere. One notable device is personification, as he personifies death and the spirits of the dead, giving them a menacing and overpowering presence. He also uses symbolism, such as the mist on the hill, to create a sense of mystery and ambiguity. The use of repetition in phrases like "shadowy--shadowy" and "mystery of mysteries" adds to the haunting and hypnotic quality of the poem.
+Dunbar uses dialect to authentically portray the speech patterns of African Americans in the late 19th century. The repetition of the phrase "Little brown baby wif spa'klin' eyes" emphasizes the speaker's adoration for the child. The use of simile in "Bees gwine to ketch you an' eat you up yit, Bein' so sticky an sweet" creates a playful and lighthearted tone. The poem also contains irony, as the speaker jokingly refers to the baby as a "tramp" and a "straggler," highlighting the affectionate teasing between the two.
 
 Historical and Personal Context:
-Edgar Allan Poe was known for his dark and macabre writing, often exploring themes of death, madness, and the supernatural. "Spirits of the Dead" reflects Poe's personal struggles with loss and grief, as well as his fascination with the afterlife and the unknown. The poem was written during a time of great personal turmoil for Poe, as he grappled with the deaths of loved ones and his own inner demons.
+Paul Laurence Dunbar was a prominent African American poet and writer in the late 19th and early 20th centuries. As an African American himself, Dunbar often explored themes of race, identity, and family in his work. "Little Brown Baby" reflects Dunbar's personal experiences and observations of African American family life during this time period. The poem also highlights the complexities of race relations and the struggles faced by African American families in a racially segregated society.
 
 Deep Reading:
-Upon closer examination, "Spirits of the Dead" can be seen as a meditation on the inevitability of death and the haunting presence of the past. The poem delves into the idea of being haunted by memories and the spirits of those who have passed on, unable to escape their influence. It speaks to the loneliness and isolation that can come with facing one's own mortality, as well as the eerie beauty that can be found in the darkness of death. Ultimately, the poem serves as a reminder of the fragility of life and the enduring power of the spirits that linger on after we are gone.
+"Little Brown Baby" is a tender and heartwarming poem that celebrates the beauty of childhood and the unconditional love between a parent and child. The speaker's playful interactions with the baby, from teasing him about his sticky hands to pretending to give him away to the "buggah-man," reveal a deep sense of affection and care. Despite the challenges and hardships faced by African Americans during this time, the poem conveys a sense of joy and innocence in the simple pleasures of family and love. Overall, "Little Brown Baby" is a poignant reminder of the resilience and strength of the human spirit in the face of adversity.
 
-## A Dream by Edward Thomas
-
-```
-OVER known fields with an old friend in dream
-I walked, but came sudden to a strange stream.
-Its dark waters were bursting out most bright
-From a great mountain's heart into the light.
-They ran a short course under the sun, then back
-Into a pit they plunged, once more as black
-As at their birth; and I stood thinking there
-How white, had the day shone on them, they were,
-Heaving and coiling. So by the roar and hiss
-And by the mighty motion of the abyss
-I was bemused, that I forgot my friend
-And neither saw nor sought him till the end,
-When I awoke from waters unto men
-Saying: "I shall be here some day again."
-```
-
-### Analysis
-
-In Edward Thomas' poem "A Dream," the speaker recounts a vivid dream where they walk with an old friend and come across a mysterious stream. The poem is structured in a free verse form, with irregular line lengths and no rhyme scheme. This lack of traditional structure mirrors the unpredictable nature of dreams and adds to the dream-like quality of the poem.
-
-The key themes in the poem revolve around the contrast between light and darkness, the fleeting nature of beauty, and the overwhelming power of nature. The imagery of the dark waters bursting out brightly from the mountain's heart symbolizes the sudden moments of clarity and beauty that can be found in unexpected places. The imagery of the waters running under the sun and then plunging back into darkness reflects the transient nature of beauty and how quickly it can be obscured.
-
-Literary devices such as personification, metaphor, and imagery are used throughout the poem to create a sense of wonder and awe. The stream is personified as bursting out most bright and heaving and coiling, giving it a sense of life and movement. The metaphor of the stream as a reflection of beauty that is fleeting and easily obscured adds depth to the poem.
-
-In terms of historical and personal context, Edward Thomas was a British poet who often explored themes of nature, beauty, and the passage of time in his work. This poem can be seen as a reflection of Thomas' own struggles with finding moments of clarity and beauty in a world that is often dark and chaotic.
-
-A deep reading of the poem reveals a sense of longing and nostalgia for moments of beauty and connection that are fleeting and easily forgotten. The speaker's preoccupation with the mesmerizing power of the stream causes them to forget their friend until the end, suggesting a sense of isolation and introspection. The final lines of the poem, "Saying: 'I shall be here some day again,'" hint at a desire to return to this moment of beauty and connection, even if it is only in dreams.
-
-Overall, "A Dream" is a reflective and introspective poem that explores themes of beauty, transience, and the overwhelming power of nature. Through vivid imagery and thoughtful reflection, Edward Thomas invites readers to contemplate the fleeting moments of beauty that can be found in unexpected places.
-
-## Pine-Trees and the Sky: Evening by Rupert Brooke
+## Song by Edgar Allan Poe
 
 ```
-I'd watched the sorrow of the evening sky,
-And smelt the sea, and earth, and the warm clover,
-And heard the waves, and the seagull's mocking cry.
+I saw thee on thy bridal day--
+  When a burning blush came o'er thee,
+Though happiness around thee lay,
+  The world all love before thee:
 
-And in them all was only the old cry,
-That song they always sing -- "The best is over!
-You may remember now, and think, and sigh,
-O silly lover!"
-And I was tired and sick that all was over,
-And because I,
-For all my thinking, never could recover
-One moment of the good hours that were over.
-And I was sorry and sick, and wished to die.
+And in thine eye a kindling light
+  (Whatever it might be)
+Was all on Earth my aching sight
+  Of Loveliness could see.
 
-Then from the sad west turning wearily,
-I saw the pines against the white north sky,
-Very beautiful, and still, and bending over
-Their sharp black heads against a quiet sky.
-And there was peace in them; and I
-Was happy, and forgot to play the lover,
-And laughed, and did no longer wish to die;
-Being glad of you, O pine-trees and the sky!
+That blush, perhaps, was maiden shame--
+  As such it well may pass--
+Though its glow hath raised a fiercer flame
+  In the breast of him, alas!
+
+Who saw thee on that bridal day,
+  When that deep blush _would_ come o'er thee,
+Though happiness around thee lay,
+  The world all love before thee.
 ```
 
 ### Analysis
 
-1. Form and Structure:
-The poem "Pine-Trees and the Sky: Evening" by Rupert Brooke consists of three stanzas with varying line lengths. The first stanza has four lines, the second stanza has eight lines, and the final stanza has six lines. The poem follows a free verse form, without a specific rhyme scheme or meter. This lack of formal structure adds to the overall feeling of spontaneity and raw emotion in the poem.
+"Song" by Edgar Allan Poe is a poignant and emotive poem that delves into themes of love, beauty, and the complexities of human emotions. Let's break down this poem line by line to fully understand its depth and meaning.
 
-2. Key Themes and Imagery:
-The key themes in the poem revolve around the passage of time, nostalgia, nature, and the search for peace and solace. The evening sky, sea, waves, and seagull's cry evoke a sense of melancholy and longing for the past. The imagery of the pine trees against the white north sky symbolizes serenity, beauty, and a sense of renewal. The contrast between the sorrowful evening sky and the peaceful pine trees highlights the speaker's emotional journey from despair to contentment.
+Form and Structure:
+The poem consists of two stanzas, each with four lines. It follows a consistent ABAB rhyme scheme, which gives it a musical quality. The repetition of certain phrases, such as "I saw thee on thy bridal day" and "Though happiness around thee lay," adds to the rhythm and emphasizes the speaker's intense emotions. The structure of the poem reflects the cyclical nature of emotions and memories, as the speaker recalls the same scene from the past.
 
-3. Literary Devices:
-Brooke employs several literary devices in the poem to convey his emotions effectively. The repetition of the phrase "the best is over" emphasizes the speaker's sense of loss and regret. The personification of nature, such as the sea and the pine trees, adds depth to the imagery and creates a connection between the speaker and the natural world. The use of alliteration, assonance, and consonance enhances the musicality of the poem and contributes to its lyrical quality.
+Key Themes and Imagery:
+One of the key themes in the poem is the contrast between outward appearances and inner turmoil. The bride is described as being surrounded by happiness and love, yet she blushes with a hidden emotion that the speaker interprets as shame. This juxtaposition of joy and inner conflict creates a sense of complexity and depth in the poem. The imagery of the burning blush and kindling light in the bride's eyes conveys a sense of passion and intensity, hinting at the speaker's own unspoken feelings for her.
 
-4. Historical and Personal Context:
-Rupert Brooke was a British poet who lived during the early 20th century and is known for his war poetry. While this poem does not directly address war, it reflects themes of loss, longing, and emotional turmoil that are prevalent in Brooke's work. The poem may also be seen as a reflection of Brooke's personal struggles and desires for inner peace amidst a tumultuous world.
+Literary Devices:
+Poe employs several literary devices to enhance the emotional impact of the poem. The use of imagery, such as the burning blush and kindling light, creates vivid pictures in the reader's mind and heightens the intensity of the speaker's emotions. The repetition of phrases like "When a burning blush came o'er thee" and "The world all love before thee" serves to reinforce the central themes of the poem and evoke a sense of nostalgia and longing.
 
-5. Deep Reading:
-The poem captures the universal experience of grappling with the passage of time and the inability to recapture moments of happiness that have passed. The speaker's journey from despair to contentment mirrors the cyclical nature of life and the healing power of nature. The contrast between the transient sorrow of the evening sky and the enduring beauty of the pine trees suggests a message of hope and renewal. Ultimately, the poem serves as a reminder of the importance of finding solace in the simple joys of nature and letting go of past regrets.
+Historical and Personal Context:
+Edgar Allan Poe is known for his exploration of themes such as love, beauty, and death in his works. This poem reflects his fascination with the darker aspects of human emotions and relationships. Poe's own personal struggles and tragic experiences likely influenced his writing, adding a layer of depth and authenticity to his portrayal of complex emotions.
+
+Deep Reading:
+At its core, "Song" is a meditation on the complexities of love and desire. The speaker's intense emotional response to the bride's blush reveals his own inner turmoil and longing. The repeated references to the bridal day suggest a moment frozen in time, forever haunting the speaker with its unresolved emotions. The poem's exploration of hidden desires and unspoken feelings resonates with the universal experience of grappling with conflicting emotions and the complexities of human relationships.
+
+In conclusion, "Song" by Edgar Allan Poe is a haunting and evocative poem that delves into the depths of human emotion. Through its vivid imagery, emotional intensity, and exploration of complex themes, the poem invites readers to reflect on the intricacies of love, desire, and the hidden truths that lie beneath the surface.
+
+## Lines Written In Early Spring by William Wordsworth
+
+```
+I heard a thousand blended notes,
+While in a grove I sate reclined,
+In that sweet mood when pleasant thoughts
+Bring sad thoughts to the mind.
+
+To her fair works did Nature link
+The human soul that through me ran;
+And much it grieved my heart to think
+What man has made of man.
+
+Through primrose tufts, in that green bower,
+The periwinkle trailed its wreaths;
+And 'tis my faith that every flower
+Enjoys the air it breathes.
+
+The birds around me hopped and played,
+Their thoughts I cannot measure:--
+But the least motion which they made
+It seemed a thrill of pleasure.
+
+The budding twigs spread out their fan,
+To catch the breezy air;
+And I must think, do all I can,
+That there was pleasure there.
+
+If this belief from heaven be sent,
+If such be Nature's holy plan,
+Have I not reason to lament
+What man has made of man?
+```
+
+### Analysis
+
+Form and Structure:
+The poem "Lines Written In Early Spring" by William Wordsworth consists of four quatrains, with each stanza following a rhyming scheme of ABAB. The consistent structure of the poem reflects the sense of order and harmony found in nature, mirroring the theme of the interconnectedness of all living beings.
+
+Key Themes and Imagery:
+One of the key themes in the poem is the contrast between the beauty and tranquility of nature and the destructive nature of humanity. Wordsworth uses vivid imagery to convey the beauty of the natural world, describing the sights and sounds of spring with great detail. The poet highlights the joy and harmony present in nature, contrasting it with the sadness and turmoil caused by human actions.
+
+Literary Devices:
+Wordsworth employs various literary devices to convey his message effectively. One such device is personification, where he attributes human-like qualities to nature, such as flowers enjoying the air they breathe. This technique serves to emphasize the connection between humans and the natural world. Additionally, the poet uses imagery, metaphor, and symbolism to evoke a sense of the beauty and purity of nature, contrasting it with the corruption and greed of mankind.
+
+Historical and Personal Context:
+During the time when Wordsworth wrote this poem, the Industrial Revolution was in full swing, leading to rapid urbanization and environmental degradation. Wordsworth, a Romantic poet, was known for his reverence for nature and his belief in its healing power. The poem can be seen as a response to the societal changes brought about by industrialization, with Wordsworth lamenting the loss of connection with the natural world.
+
+Deep Reading:
+In "Lines Written In Early Spring," Wordsworth reflects on the beauty and harmony of nature, contrasting it with the destructive actions of humanity. The poet's observation of the birds and flowers in the grove leads him to question the state of the human soul and the impact of man's actions on the environment. Through the imagery of nature's joy and the sorrow of human existence, Wordsworth emphasizes the need for a return to a more harmonious relationship with the natural world. The poem serves as a reminder of the interconnectedness of all living beings and the importance of preserving the beauty and purity of the natural world.
 
 ## Today's Writing Challenge
 
