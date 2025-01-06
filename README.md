@@ -21,7 +21,12 @@ To use this service, you'll need:
 - A GitHub account (free)
 - A Gmail account
 - A Gmail app-specific password
-- An OpenAI API key (comes with $5 free credit)
+- An OpenAI account with:
+  - A valid credit card on file
+  - API access enabled
+  - An API key (new accounts receive $5 in free credit)
+
+Note: OpenAI requires a credit card for API access even if you plan to only use the free credit. The card will not be charged until you exceed the free credit limit.
 
 ## Costs
 
@@ -30,6 +35,7 @@ The service is very cost-effective:
 - 3 poems per day = $0.0045 daily
 - Approximately $0.14 per month
 - First month likely free with OpenAI's $5 starter credit
+- Your credit card will only be charged if you exceed the free credit
 
 ## Setup Instructions
 
@@ -39,12 +45,14 @@ git clone https://github.com/yourusername/poetry-service.git
 cd poetry-service
 ```
 
-### 2. Get OpenAI API Key
+### 2. Set Up OpenAI Account and Get API Key
 1. Go to https://platform.openai.com/
 2. Sign up or log in
-3. Click your profile icon → "View API keys"
-4. Click "Create new secret key"
-5. Copy the key (save it - you won't be able to see it again)
+3. Add a valid credit card to your account
+4. Enable API access in your account settings
+5. Click your profile icon → "View API keys"
+6. Click "Create new secret key"
+7. Copy the key (save it - you won't be able to see it again)
 
 ### 3. Create Gmail App Password
 1. Go to your Google Account settings
@@ -109,20 +117,21 @@ The service will automatically run daily according to your configured schedule. 
 
 ### Common Issues
 
-1. **Emails not sending**
+1. **OpenAI API Issues**
+   - Verify credit card is valid and not expired
+   - Check if you've exceeded free credit limit
+   - Ensure API access is enabled in your account
+   - Verify API key is valid and properly set in secrets
+
+2. **Emails not sending**
    - Check if Gmail app password is correct
    - Verify email address in secrets
    - Check GitHub Actions logs for errors
 
-2. **No poems being fetched**
+3. **No poems being fetched**
    - Ensure preferred authors exist in PoetryDB
    - Check PoetryDB API status
    - Verify internet connectivity in Actions logs
-
-3. **Missing analysis**
-   - Verify OpenAI API key is valid
-   - Check OpenAI account credit balance
-   - Review API response in logs
 
 ### Getting Help
 
@@ -159,3 +168,5 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 - Regularly rotate your Gmail app password
 - Monitor GitHub Actions usage if using a private repository
 - Keep an eye on OpenAI API usage and set usage limits if needed
+- Ensure your OpenAI account has billing notifications enabled
+- Review OpenAI's billing dashboard regularly to avoid unexpected charges
