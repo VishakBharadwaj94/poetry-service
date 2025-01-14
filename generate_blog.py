@@ -142,7 +142,10 @@ class PoetryBlogGenerator:
                 "prompt": "A creative and specific writing prompt",
                 "tone_analysis": "Brief analysis of the prompt's emotional tone and themes"
             }}
-            Make the prompt evocative and specific, focusing on sensory details and emotional depth.
+            Make the prompt evocative and specific, focusing on sensory details and emotional depth, 
+            but not specific to any particular event or person. So you could say "Write a poem about
+            the feeling of loss" but not "Write a poem about your grandmother's funeral."
+
             """
 
             initial_response = self.client.chat.completions.create(
