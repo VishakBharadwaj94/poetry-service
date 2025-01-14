@@ -248,7 +248,7 @@ class PoetryBlogGenerator:
 
         return post_data
 
-     def save_post(self, post_data: Dict[str, Any]):
+    def save_post(self, post_data: Dict[str, Any]):
         """Save the post as a markdown file with YAML front matter."""
         date = post_data["date"]
         filename = f"{date}-daily-poetry.md"
