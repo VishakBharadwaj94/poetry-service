@@ -126,37 +126,65 @@ class PoetryBlogGenerator:
             logger.error(f"Error getting poem analysis: {str(e)}")
             return "Analysis unavailable at this time."
 
-    def get_writing_prompt(self) -> Dict[str, str]:
+    def get_writing_prompt(self) -> Dict[str, Any]:
         """Generate a creative writing prompt using GPT."""
         try:
             form = random.choice(self.poetic_forms)
             
+            # Select 3 random word pairs
+            with open('word-pairs.md', 'r') as f:
+                content = f.read()
+                # Extract table rows using simple parsing
+                rows = [line for line in content.split('\n') if line.strip().startswith('|') and not line.strip().startswith('|---')]
+                # Remove header row
+                rows = [row for row in rows if not 'Germanic Root' in row]
+                
+                # Select 3 random pairs
+                selected_pairs = random.sample(rows, 3)
+                word_pairs = []
+                for row in selected_pairs:
+                    cols = [col.strip() for col in row.split('|')[1:]]  # Split and remove empty first element
+                    word_pairs.append({
+                        'germanic': cols[2].strip(),
+                        'latinate': cols[3].strip()
+                    })
+            
             prompt = f"""
             Create an inspiring poetry writing prompt. Use this poetic form: {form}
-
+    
+            Include these word pairs in the prompt (use any of the words from each pair):
+            1. Germanic options: {word_pairs[0]['germanic']} | Latinate options: {word_pairs[0]['latinate']}
+            2. Germanic options: {word_pairs[1]['germanic']} | Latinate options: {word_pairs[1]['latinate']}
+            3. Germanic options: {word_pairs[2]['germanic']} | Latinate options: {word_pairs[2]['latinate']}
+    
             Return the response in this exact JSON format:
             {{
                 "form": "{form}",
                 "structure": "Brief description of the form's structure",
                 "rhyme_scheme": "Description of rhyme scheme if applicable",
-                "prompt": "A creative and specific writing prompt"
+                "prompt": "A creative and specific writing prompt",
+                "word_suggestions": [
+                    {{"germanic": "germanic word", "latinate": "latinate word", "usage_note": "Brief note on how these words differ in tone/usage"}},
+                    {{"germanic": "germanic word", "latinate": "latinate word", "usage_note": "Brief note on how these words differ in tone/usage"}},
+                    {{"germanic": "germanic word", "latinate": "latinate word", "usage_note": "Brief note on how these words differ in tone/usage"}}
+                ]
             }}
-
-            Make the prompt specific, evocative, and imaginative. Focus on sensory details, emotions, or narrative moments.
-            The prompt should inspire both beginning and experienced poets.
+    
+            Make the prompt specific and evocative, incorporating the suggested word pairs naturally.
+            In the word_suggestions, provide specific usage notes about how the Germanic and Latinate versions convey different tones or contexts.
             """
-
+    
             response = self.client.chat.completions.create(
                 model="gpt-3.5-turbo",
                 messages=[{"role": "user", "content": prompt}],
-                max_tokens=500,
+                max_tokens=800,
                 temperature=0.9
             )
             
             # Parse the response as JSON
             try:
                 prompt_data = json.loads(response.choices[0].message.content)
-                required_keys = ["form", "structure", "rhyme_scheme", "prompt"]
+                required_keys = ["form", "structure", "rhyme_scheme", "prompt", "word_suggestions"]
                 if not all(key in prompt_data for key in required_keys):
                     raise ValueError("Missing required keys in prompt data")
                 return prompt_data
@@ -167,7 +195,8 @@ class PoetryBlogGenerator:
                     "form": form,
                     "structure": "Traditional form",
                     "rhyme_scheme": "Variable",
-                    "prompt": "Write about a meaningful personal experience"
+                    "prompt": "Write about a meaningful personal experience",
+                    "word_suggestions": []
                 }
                 
         except Exception as e:
@@ -176,7 +205,8 @@ class PoetryBlogGenerator:
                 "form": "Free Verse",
                 "structure": "No fixed structure",
                 "rhyme_scheme": "No fixed rhyme scheme",
-                "prompt": "Write about something that moved you today"
+                "prompt": "Write about something that moved you today",
+                "word_suggestions": []
             }
 
     def select_daily_poems(self) -> List[Dict[str, Any]]:
@@ -218,12 +248,12 @@ class PoetryBlogGenerator:
 
         return post_data
 
-    def save_post(self, post_data: Dict[str, Any]):
+     def save_post(self, post_data: Dict[str, Any]):
         """Save the post as a markdown file with YAML front matter."""
         date = post_data["date"]
         filename = f"{date}-daily-poetry.md"
         filepath = self.output_dir / filename
-
+    
         # Create YAML front matter
         front_matter = {
             "layout": "post",
@@ -231,12 +261,12 @@ class PoetryBlogGenerator:
             "date": f"{date} 00:00:00 +0000",
             "categories": ["poetry", "daily"]
         }
-
+    
         content = ["---"]
         content.extend([f"{k}: {v}" for k, v in front_matter.items()])
         content.append("---")
         content.append("")
-
+    
         # Add poems and analyses
         for poem in post_data["poems"]:
             content.append(f"## {poem['title']} by {poem['author']}")
@@ -245,12 +275,10 @@ class PoetryBlogGenerator:
             content.extend(poem["lines"])
             content.append("```")
             content.append("")
-            content.append("### Analysis")
-            content.append("")
             content.append(poem["analysis"])
             content.append("")
-
-        # Add writing prompt
+    
+        # Add writing prompt with word suggestions
         prompt = post_data["writing_prompt"]
         content.append("## Today's Writing Challenge")
         content.append("")
@@ -260,11 +288,22 @@ class PoetryBlogGenerator:
         content.append("")
         content.append(f"*Prompt: {prompt['prompt']}*")
         content.append("")
+        
+        if prompt.get('word_suggestions'):
+            content.append("### Word Suggestions")
+            content.append("")
+            content.append("Consider these word pairs that complement your poem's tone:")
+            content.append("")
+            for pair in prompt['word_suggestions']:
+                content.append(f"- **{pair['germanic']}** (Germanic) / **{pair['latinate']}** (Latinate)")
+                content.append(f"  - *{pair['usage_note']}*")
+                content.append(f"  - **Recommended:** {pair['recommended']} for this context")
+                content.append("")
 
-        # Write the file
-        filepath.write_text("\n".join(content))
-        logger.info(f"Saved blog post to {filepath}")
-
+    # Write the file
+    filepath.write_text("\n".join(content))
+    logger.info(f"Saved blog post to {filepath}")
+    
     def generate_daily_post(self):
         """Generate and save today's poetry blog post."""
         poems = self.select_daily_poems()
