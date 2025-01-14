@@ -143,6 +143,7 @@ class PoetryBlogGenerator:
                 "tone_analysis": "Brief analysis of the prompt's emotional tone and themes"
             }}
             Make the prompt evocative and specific, focusing on sensory details and emotional depth, 
+            but not too terse so as to limit creativity.
             but not specific to any particular event or person. So you could say "Write a poem about
             the feeling of loss at a funeral" but not "Write a poem about your grandmother's funeral."
             you can say "write about the feeling of curiosity in childhood when you play in the woods" but not
