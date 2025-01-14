@@ -138,4 +138,58 @@ A comprehensive reference of word pairs showing the Germanic and Latin roots of 
 | 126 | *WGmc skuttjan* | shut | close | *clausus* |
 | 127 | *PGmc skeuh(w)az* | shy | timid | *timidus* |
 | 128 | *PGmc sehwiþō* | sight, seeing | vision | *vidēre* |
-| 129 | *P
+| 129 | *PGmc skaljo* | skill, craft | art | *ars* |
+| 130 | *PGmc slǣpanþiaz* | sleeping | dormant | *dormiēns* |
+| 131 | *PGmc smæl* | small, little | minute | *min* |
+| 132 | *PGmc sunþrōnijaz* | southern | austral | *austrālis* |
+| 133 | *PGmc spraikō* | speak, say | declare | *dēclārāre* |
+| 134 | *PGmc spediz* | speed, haste | velocity | *vēlōcitās* |
+| 135 | *PGmc springan* | spring | vernal | *vernālis* |
+| 136 | *PGmc staigō* | stair, step | grade | *gradus* |
+| 137 | *PGmc standaną* | stand | station | *statiō* |
+| 138 | *PGmc stangō* | sting, prick | stimulate | *stimulāre* |
+| 139 | *PGmc strekkanan* | stretch, strain | extend | *extendere* |
+| 140 | *PGmc starkuz* | strong, stark | robust | *rōbustus* |
+| 141 | *PGmc þankaz* | thank | gratitude | *grātitūdō* |
+| 142 | *PGmc þat* | that, the | the | *ille* |
+| 143 | *PGmc þar* | there | thither | *ibi* |
+| 144 | *PGmc þikkuz* | thick, stout | dense | *dēnsus* |
+| 145 | *PGmc þreuttōną* | tire, weary | fatigue | *fatīgāre* |
+| 146 | *PGmc tō* | to, towards | versus | *versus* |
+| 147 | *Old English tunge* | tongue, speech | language | *lingua* |
+| 148 | *PGmc tōþs* | tooth, tusk | dental | *dēns* |
+| 149 | *PGmc tawwō* | tool, device | instrument | *īnstrūmentum* |
+| 150 | *PGmc trewwaz* | true, trusty | veracious | *vērāx* |
+| 151 | *PGmc twai* | two, tway | dual | *duālis* |
+| 152 | *PGmc under* | under, beneath | sub-, infra- | *sub, īnfrā* |
+| 153 | *PGmc unniz* | unrest, strife | discord | *discordia* |
+| 154 | *PGmc upp* | up, upward | superior | *superior* |
+| 155 | *WGmc wadaną* | wade, ford | traverse | *trānsvertere* |
+| 156 | *PGmc wagō* | wag, wave | oscillate | *oscillāre* |
+| 157 | *PGmc walgaz* | wall, rampart | mural | *mūrālis* |
+| 158 | *PGmc wandrōną* | wander, stray | deviate | *dēviāre* |
+| 159 | *PGmc wantōną* | want, lack | require | *requīrere* |
+| 160 | *PGmc werrą* | war, strife | bellicose | *bellicōsus* |
+| 161 | *PGmc waskaną* | wash, lave | ablute | *abluere* |
+| 162 | *PGmc watōr* | water, mere | aqueous | *aqua* |
+| 163 | *PGmc wegaz* | way, path | via | *via* |
+| 164 | *PGmc wlitiz* | wealth, weal | prosperity | *prōsperitās* |
+| 165 | *PGmc werþaz* | worth, value | merit | *meritum* |
+| 166 | *PGmc westrōnijaz* | western | occidental | *occidēns* |
+| 167 | *PGmc hwat* | what, which | query | *quaerere* |
+| 168 | *PGmc hwar* | where | location | *locātiō* |
+| 169 | *PGmc hwīlō* | while, time | duration | *dūrātiō* |
+| 170 | *PGmc hwītaz* | white | albescent | *albēscēns* |
+| 171 | *PGmc hwaz* | who | person | *persōna* |
+| 172 | *PGmc hwī* | why | reason | *ratiō* |
+| 173 | *PGmc wīdaz* | wide, broad | ample | *amplus* |
+| 174 | *PGmc wiljaną* | will, wish | volition | *volitiō* |
+| 175 | *PGmc windaz* | wind, breeze | ventilation | *ventilātiō* |
+| 176 | *PGmc wīsaz* | wise, sage | sapient | *sapiēns* |
+| 177 | *PGmc witjaną* | wit, know | cognition | *cognitiō* |
+| 178 | *PGmc wurdiz* | word, term | vocable | *vocābulum* |
+| 179 | *PGmc wurkijaną* | work, toil | labor | *labor* |
+| 180 | *PGmc wrītanan* | write, scribe | compose | *compōnere* |
+| 181 | *PGmc jērą* | year | annual | *annuālis* |
+| 182 | *PGmc gistradagaz* | yesterday | prior day | *prior diēs* |
+| 183 | *PGmc jungaz* | young, youthful | juvenile | *iuvenīlis* |
