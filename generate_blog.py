@@ -172,6 +172,21 @@ class PoetryBlogGenerator:
                     not line.strip().startswith('|---') and 
                     not 'Germanic Root' in line]
 
+                # Process the rows to extract modern words
+                word_pairs = []
+                for row in rows:
+                    cols = [col.strip() for col in row.split('|')[1:]]  # Split and remove empty first element
+                    # Get first word from each modern word list (Germanic and Latinate)
+                    germanic_words = cols[2].strip().split(',')[0].strip()
+                    latinate_words = cols[3].strip().split(',')[0].strip()
+                    word_pairs.append({
+                        'germanic': germanic_words,
+                        'latinate': latinate_words
+                    })
+
+            # Select random pairs for consideration
+            selected_pairs = random.sample(word_pairs, 30)
+
             # Now ask GPT to select appropriate pairs based on the tone
             selection_prompt = f"""
             Given this poetry prompt and its tone:
@@ -184,16 +199,16 @@ class PoetryBlogGenerator:
             For each pair, carefully consider whether the Germanic or Latinate version would better serve 
             the poem's mood, rhythm, and thematic goals.
 
-            Here are some available word pairs:
-            {random.sample(rows, 30)}
+            Choose from these modern English word pairs (Germanic/Latinate):
+            {selected_pairs}
 
             Return your response in this JSON format:
             {{
                 "word_suggestions": [
                     {{
-                        "germanic": "germanic word",
-                        "latinate": "latinate word",
-                        "usage_note": "Explain how these words differ in tone, context, and emotional impact",
+                        "germanic": "modern germanic english word",
+                        "latinate": "modern latinate english word",
+                        "usage_note": "Explain how these modern English words differ in tone, context, and emotional impact",
                         "recommended": "germanic or latinate - specify which version would work better for the tone"
                     }},
                     {{second pair}},
@@ -202,8 +217,8 @@ class PoetryBlogGenerator:
             }}
 
             For each pair:
-            1. Choose words that naturally fit the prompt's theme
-            2. Explain the subtle differences between the Germanic and Latinate versions
+            1. Use only the modern English words, not their historical roots
+            2. Explain the subtle differences in how these words are used in modern English
             3. Make a clear recommendation based on the poem's tone and form
             4. Consider how the words' sounds and syllables fit the poetic form
             """
@@ -225,7 +240,7 @@ class PoetryBlogGenerator:
                 "prompt": base_prompt["prompt"],
                 "word_suggestions": word_suggestions["word_suggestions"]
             }
-            
+
         except Exception as e:
             logger.error(f"Error getting writing prompt: {str(e)}")
             return {
