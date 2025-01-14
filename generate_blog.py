@@ -143,7 +143,11 @@ class PoetryBlogGenerator:
                 "tone_analysis": "Brief analysis of the prompt's emotional tone and themes"
             }}
             Make the prompt evocative and specific, focusing on sensory details and emotional depth, 
-            but not too terse so as to limit creativity.
+            but not too terse so as to limit creativity. Also not that the themes being asked for should have some
+            relation to the form, its structure, or its tone. For example, if you ask for a sonnet, you could ask for a
+            poem about love that explores the complexities of romantic relationships, the joy and pain of love, 
+            and the emotional depth of human connection. But you could not ask for a poem about a car crash, 
+            because that is not thematically appropriate for a sonnet.
             but not specific to any particular event or person. So you could say "Write a poem about
             the feeling of loss at a funeral" but not "Write a poem about your grandmother's funeral."
             you can say "write about the feeling of curiosity in childhood when you play in the woods" but not
