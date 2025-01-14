@@ -5,183 +5,191 @@ date: 2025-01-14 00:00:00 +0000
 categories: ['poetry', 'daily']
 ---
 
-## Sonnet 38 - First time he kissed me, he but only kissed by Elizabeth Barrett Browning
+## Disabled by Wilfred Owen
 
 ```
-First time he kissed me, he but only kissed
-The fingers of this hand wherewith I write;
-And ever since, it grew more clean and white,
-Slow to world-greetings, quick with its 'Oh, list,'
-When the angels speak. A ring of amethyst
-I could not wear here, plainer to my sight,
-Than that first kiss. The second passed in height
-The first, and sought the forehead, and half missed,
-Half falling on the hair. O beyond meed!
-That was the chrism of love, which love's own crown,
-With sanctifying sweetness, did precede.
-The third upon my lips was folded down
-In perfect, purple state; since when, indeed,
-I have been proud and said, 'My love, my own.'
-```
+He sat in a wheeled chair, waiting for dark,
+And shivered in his ghastly suit of grey,
+Legless, sewn short at elbow.  Through the park
+Voices of boys rang saddening like a hymn,
+Voices of play and pleasure after day,
+Till gathering sleep had mothered them from him.
 
-### Form, Structure, Meter, and Rhyme
+About this time Town used to swing so gay
+When glow-lamps budded in the light-blue trees
+And girls glanced lovelier as the air grew dim,
+-- In the old times, before he threw away his knees.
+Now he will never feel again how slim
+Girls' waists are, or how warm their subtle hands,
+All of them touch him like some queer disease.
 
-In this sonnet, Elizabeth Barrett Browning adheres to the traditional structure of a Shakespearean sonnet, consisting of 14 lines written in iambic pentameter. The rhyme scheme follows the ABABCDCDEFEFGG pattern. Browning's use of iambic pentameter creates a rhythmic flow, emphasizing the emotions experienced by the speaker. The consistent rhyme scheme adds to the sonnet's lyrical quality and helps to convey the speaker's journey through the stages of love.
+There was an artist silly for his face,
+For it was younger than his youth, last year.
+Now he is old; his back will never brace;
+He's lost his colour very far from here,
+Poured it down shell-holes till the veins ran dry,
+And half his lifetime lapsed in the hot race,
+And leap of purple spurted from his thigh.
+One time he liked a bloodsmear down his leg,
+After the matches carried shoulder-high.
+It was after football, when he'd drunk a peg,
+He thought he'd better join.  He wonders why . . .
+Someone had said he'd look a god in kilts.
 
-### Themes and Imagery
+That's why; and maybe, too, to please his Meg,
+Aye, that was it, to please the giddy jilts,
+He asked to join.  He didn't have to beg;
+Smiling they wrote his lie; aged nineteen years.
+Germans he scarcely thought of; and no fears
+Of Fear came yet.  He thought of jewelled hilts
+For daggers in plaid socks; of smart salutes;
+And care of arms; and leave; and pay arrears;
+Esprit de corps; and hints for young recruits.
+And soon, he was drafted out with drums and cheers.
 
-The central theme of Sonnet 38 is the progression of love through different stages of physical intimacy. Through vivid imagery, Browning conveys the deepening emotional connection between the speaker and her lover. The use of sensory details, such as the touch of a kiss and the visual imagery of an amethyst ring, enhances the reader's understanding of the speaker's emotional transformation. The poem explores themes of purity, sanctity, and pride in love, highlighting the transformative power of romantic relationships.
-
-### Literary Devices
-
-Browning employs various literary devices to enhance the poem's emotional impact. The use of imagery, such as the "ring of amethyst" and "perfect, purple state," creates vivid pictures in the reader's mind, emphasizing the significance of each kiss. Additionally, the repetition of the word "love" and the alliteration in phrases like "sanctifying sweetness" and "folded down" add to the poem's musicality. Browning also utilizes symbolism, as seen in the comparison of the first kiss to an amethyst ring, to convey the depth of the speaker's emotions.
-
-### Historical and Personal Context
-
-Elizabeth Barrett Browning was a Victorian poet known for her exploration of themes such as love, spirituality, and social justice. As a woman writing in the 19th century, Browning's poetry often reflected her personal experiences and emotions. Sonnet 38 can be interpreted as a reflection of Browning's own romantic relationship with her husband, Robert Browning. The sonnet captures the intensity and purity of love, a recurring theme in Browning's works.
-
-### Deep Reading
-
-Through the progression of kisses described in the sonnet, Browning delves into the transformative power of love. The speaker's journey from a simple kiss on the hand to a passionate kiss on the lips symbolizes the deepening emotional connection between the lovers. Each kiss represents a milestone in the evolution of their relationship, culminating in a sense of pride and ownership in the final line. Browning's use of intimate details and sensory imagery invites readers to experience the speaker's emotions firsthand, making Sonnet 38 a poignant exploration of love's transformative nature.
-
-## A Day Dream by Emily Bronte
-
-```
-On a sunny brae, alone I lay
-One summer afternoon;
-It was the marriage-time of May
-With her young lover, June.
-
-From her mother's heart, seemed loath to part
-That queen of bridal charms,
-But her father smiled on the fairest child
-He ever held in his arms.
-
-The trees did wave their plumy crests,
-The glad birds caroled clear;
-And I, of all the wedding guests,
-Was only sullen there!
-
-There was not one, but wished to shun
-My aspect void of cheer;
-The very grey rocks, looking on,
-Asked, "What do you here?"
-
-And I could utter no reply;
-In sooth, I did not know
-Why I had brought a clouded eye
-To greet the general glow.
-
-So, resting on a heathy bank,
-I took my heart to me;
-And we together sadly sank
-Into a reverie.
-
-We thought, "When winter comes again,
-Where will these bright things be?
-All vanished, like a vision vain,
-An unreal mockery!
-
-The birds that now so blithely sing,
-Through deserts, frozen dry,
-Poor spectres of the perished spring,
-In famished troops, will fly.
-
-And why should we be glad at all?
-The leaf is hardly green,
-Before a token of its fall
-Is on the surface seen!"
-
-Now, whether it were really so,
-I never could be sure;
-But as in fit of peevish woe,
-I stretched me on the moor.
-
-A thousand thousand gleaming fires
-Seemed kindling in the air;
-A thousand thousand silvery lyres
-Resounded far and near:
-
-Methought, the very breath I breathed
-Was full of sparks divine,
-And all my heather-couch was wreathed
-By that celestial shine!
-
-And, while the wide earth echoing rung
-To their strange minstrelsy,
-The little glittering spirits sung,
-Or seemed to sing, to me.
-
-"O mortal! mortal! let them die;
-Let time and tears destroy,
-That we may overflow the sky
-With universal joy!
-
-Let grief distract the sufferer's breast,
-And night obscure his way;
-They hasten him to endless rest,
-And everlasting day.
-
-To thee the world is like a tomb,
-A desert's naked shore;
-To us, in unimagined bloom,
-It brightens more and more!
-
-And could we lift the veil, and give
-One brief glimpse to thine eye,
-Thou wouldst rejoice for those that live,
-Because they live to die."
-
-The music ceased; the noonday dream,
-Like dream of night, withdrew;
-But Fancy, still, will sometimes deem
-Her fond creation true.
+Some cheered him home, but not as crowds cheer Goal.
+Only a solemn man who brought him fruits
+Thanked him; and then inquired about his soul.
+Now, he will spend a few sick years in Institutes,
+And do what things the rules consider wise,
+And take whatever pity they may dole.
+To-night he noticed how the women's eyes
+Passed from him to the strong men that were whole.
+How cold and late it is!  Why don't they come
+And put him into bed?  Why don't they come?
 ```
 
 ### Form, Structure, Meter, and Rhyme
 
-This poem, "A Day Dream" by Emily Bronte, consists of five stanzas with varying line lengths. The first stanza has 8 lines, while the subsequent stanzas have 12 lines each. The poem does not follow a strict rhyme scheme, with some stanzas having a consistent rhyme pattern (e.g., ABCB) while others have a more irregular rhyme scheme. The irregular structure and rhyme scheme contribute to the dreamlike quality of the poem, mirroring the wandering thoughts of the speaker.
+The poem "Disabled" by Wilfred Owen consists of seven stanzas, each with a varying number of lines. The structure is free verse, with no consistent meter or rhyme scheme. This lack of formal structure mirrors the chaotic and fragmented nature of the soldier's thoughts and experiences. The irregular line lengths contribute to the overall feeling of disorientation and unease in the poem.
 
 ### Themes and Imagery
 
-The central themes of the poem revolve around the fleeting nature of beauty and happiness, the contrast between the natural world and human emotions, and the idea of mortality. The imagery in the poem is vivid and evocative, painting a picture of a sunny day in nature juxtaposed with the speaker's inner turmoil. The imagery of the wedding between May and June symbolizes the fleeting nature of happiness and the inevitability of change. The contrast between the joyful wedding guests and the sullen speaker highlights the speaker's sense of alienation and introspection.
+One of the central themes of the poem is the physical and emotional toll of war on soldiers. The imagery of the disabled soldier, sitting in a wheelchair, missing limbs, and feeling isolated from society, highlights the devastating consequences of war. The contrast between the soldier's memories of his youth and the harsh reality of his current situation emphasizes the loss of innocence and vitality that war brings. The vivid descriptions of the soldier's physical injuries and emotional struggles evoke a sense of pity and sympathy from the reader.
 
 ### Literary Devices
 
-Bronte employs several literary devices throughout the poem to enhance its meaning and mood. One notable device is personification, as seen in lines such as "The trees did wave their plumy crests" and "The very grey rocks, looking on." These personifications give life to the natural world and emphasize the speaker's sense of detachment from it. The use of symbolism is also prevalent in the poem, with the changing seasons and natural elements representing broader themes of transition and impermanence.
+Owen employs various literary devices to convey the themes of the poem. The use of simile in "All of them touch him like some queer disease" compares the way people interact with the disabled soldier to a contagious illness, highlighting his feelings of alienation and isolation. The repetition of the word "why" in the soldier's thoughts emphasizes his confusion and regret over joining the war. The juxtaposition of the soldier's past hopes and dreams with his current bleak reality creates a sense of irony and tragedy.
 
 ### Historical and Personal Context
 
-Emily Bronte, known for her introspective and often melancholic poetry, likely drew inspiration from her own experiences and emotions when writing "A Day Dream." The poem reflects the Romantic era's fascination with nature and the human psyche, as well as the themes of transience and mortality that were common in Romantic literature. Bronte's personal struggles and isolation may have influenced the speaker's sense of alienation and melancholy in the poem.
+Wilfred Owen was a soldier in World War I, and his poetry often reflects his firsthand experiences of the horrors of war. "Disabled" was written during Owen's time in a hospital recovering from shell shock, giving the poem a personal and intimate perspective on the physical and psychological wounds of war. The poem also reflects the broader historical context of World War I, where many young men were persuaded to join the war effort with promises of glory and honor, only to face the harsh realities of combat.
 
 ### Deep Reading
 
-Through the speaker's daydream, Bronte delves into deeper philosophical questions about life, death, and the nature of existence. The contrast between the earthly realm and the celestial realm, as depicted by the spirits in the poem, highlights the speaker's struggle to find meaning and purpose in a world filled with impermanence and suffering. The celestial beings' perspective on mortality challenges the speaker's own views on life and death, suggesting a more transcendental understanding of existence.
+Through the character of the disabled soldier, Owen explores the themes of loss, disillusionment, and the dehumanizing effects of war. The soldier's physical disabilities symbolize the loss of his youth, innocence, and sense of self. The contrast between the soldier's idealized visions of war and the brutal reality he faces highlights the disconnect between propaganda and the actual experience of combat. The final lines of the poem, "How cold and late it is! Why don't they come / And put him into bed? Why don't they come?" convey a sense of abandonment and helplessness, emphasizing the soldier's profound isolation and despair. Overall, "Disabled" is a powerful and poignant portrayal of the devastating impact of war on individuals.
 
-Overall, "A Day Dream" by Emily Bronte is a contemplative and introspective poem that explores themes of transience, mortality, and the human experience. Through vivid imagery, literary devices, and personal reflection, Bronte crafts a thought-provoking piece that invites readers to ponder the fleeting nature of life and the eternal questions of existence.
+## Spring Quiet by Christina Rossetti
+
+```
+Gone were but the Winter,
+Come were but the Spring,
+I would go to a covert
+Where the birds sing;
+
+Where in the whitethorn
+Singeth a thrush,
+And a robin sings
+In the holly-bush.
+
+Full of fresh scents
+Are the budding boughs
+Arching high over
+A cool green house:
+
+Full of sweet scents,
+And whispering air
+Which sayeth softly:
+"We spread no snare;
+
+"Here dwell in safety,
+Here dwell alone,
+With a clear stream
+And a mossy stone.
+
+"Here the sun shineth
+Most shadily;
+Here is heard an echo
+Of the far sea,
+Though far off it be."
+```
+
+### Form, Structure, Meter, and Rhyme
+
+Christina Rossetti's poem "Spring Quiet" is structured as a six-stanza poem with a consistent AABB rhyme scheme. The poem flows smoothly, with each stanza consisting of four lines. The meter is mainly iambic, with alternating lines of tetrameter and trimeter creating a musical quality to the poem. The regular rhyme scheme and meter contribute to the overall peaceful and soothing tone of the poem.
+
+### Themes and Imagery
+
+The central theme of "Spring Quiet" revolves around nature, renewal, and tranquility. The poem captures the essence of spring, with the speaker longing to escape to a secluded place where they can be surrounded by the sights and sounds of nature. Rossetti's vivid imagery brings the setting to life, from the singing birds in the whitethorn and holly-bush to the fresh scents and whispering air. The imagery of the "cool green house" and the "clear stream" evokes a sense of peace and serenity, highlighting the beauty of the natural world.
+
+### Literary Devices
+
+Rossetti employs various literary devices to enhance the poem's themes and imagery. The repetition of the word "here" in the final stanza emphasizes the idea of finding safety and solace in nature. Personification is also present in lines such as "Whispering air" and "Which sayeth softly," giving nature a voice and agency. The use of alliteration in phrases like "Full of fresh scents" and "cool green house" adds a musical quality to the poem, enhancing its lyrical nature.
+
+### Historical and Personal Context
+
+Christina Rossetti was a Victorian poet known for her introspective and often melancholic verse. "Spring Quiet" reflects her deep connection to nature and her appreciation for its beauty and tranquility. In the context of the Victorian era, a period marked by industrialization and urbanization, the poem serves as a nostalgic ode to the natural world and a desire to escape the hustle and bustle of city life.
+
+### Deep Reading
+
+At its core, "Spring Quiet" can be seen as a meditation on the restorative power of nature. The speaker's yearning for a secluded sanctuary where they can be at one with the natural world reflects a desire for peace and solitude in the midst of the chaos of everyday life. The poem invites readers to pause, breathe, and appreciate the beauty and serenity of the spring season, reminding us of the importance of connecting with the natural world for inner peace and rejuvenation.
+
+## There's Wisdom In Women by Rupert Brooke
+
+```
+"Oh love is fair, and love is rare;" my dear one she said,
+"But love goes lightly over." I bowed her foolish head,
+And kissed her hair and laughed at her. Such a child was she;
+So new to love, so true to love, and she spoke so bitterly.
+
+But there's wisdom in women, of more than they have known,
+And thoughts go blowing through them, are wiser than their own,
+Or how should my dear one, being ignorant and young,
+Have cried on love so bitterly, with so true a tongue?
+```
+
+### Form, Structure, Meter, and Rhyme
+
+The poem "There's Wisdom In Women" by Rupert Brooke is written in a traditional form with four quatrains. Each stanza consists of four lines, following an ABAB rhyme scheme. The meter is predominantly iambic tetrameter, with lines alternating between eight and seven syllables. This rhythmic pattern helps create a smooth and flowing structure that enhances the lyrical quality of the poem.
+
+### Themes and Imagery
+
+The central theme of the poem revolves around the contrast between the perceived innocence of women and the underlying wisdom they possess. The speaker acknowledges the superficial perception of women as naive and inexperienced in matters of love, yet he discovers a deeper understanding and insight within them. The imagery in the poem is vivid and evocative, with descriptions of love as fair and rare, and the wisdom that lies hidden beneath the surface of women's emotions.
+
+### Literary Devices
+
+Brooke employs several literary devices to convey his message effectively. One notable device is irony, as the speaker initially dismisses the wisdom of women only to realize their profound insight later on. The use of personification is evident in lines like "thoughts go blowing through them," giving human-like qualities to abstract ideas. Additionally, the repetition of the word "love" throughout the poem emphasizes its significance and complexity.
+
+### Historical and Personal Context
+
+Rupert Brooke was a renowned English poet known for his romantic and idealistic verse. This poem reflects the societal norms and gender roles prevalent during the early 20th century, where women were often seen as delicate and emotional beings. Brooke's personal experiences with love and relationships likely influenced the themes explored in this poem, as he delves into the complexities of human emotions and perceptions.
+
+### Deep Reading
+
+On a deeper level, "There's Wisdom In Women" challenges traditional notions of femininity and highlights the underestimated intelligence and intuition of women. The speaker's realization of the depth of his dear one's understanding serves as a commentary on the tendency to overlook the wisdom and insight that women possess. By unraveling the layers of emotions and perceptions, Brooke invites readers to reconsider their preconceived notions and appreciate the profound wisdom that lies within women. The poem ultimately celebrates the power of love to reveal hidden truths and complexities within individuals.
 
 ## Today's Writing Challenge
 
-**Form:** Ghazal
+**Form:** Pantoum
 
-**Structure:** The Ghazal is a poetic form consisting of rhyming couplets and a refrain, with each line sharing the same meter. The first couplet sets the rhyme scheme, and each subsequent couplet follows the same pattern.
+**Structure:** The Pantoum consists of a series of quatrains where the second and fourth lines of each stanza are repeated as the first and third lines of the following stanza. The poem ends with the first and third lines of the first stanza as the final two lines.
 
-**Rhyme Scheme:** A1, A2, A1, A2, A1, A2, A1, A2...and so on
+**Rhyme Scheme:** ABAB
 
-*Prompt: Write a Ghazal exploring the bittersweet nostalgia of a childhood summer night, focusing on the sounds of crickets chirping, the scent of fresh cut grass, and the feeling of warm pavement under bare feet.*
+*Prompt: Write a pantoum about the nostalgic scent of summer rain on a country road, exploring the themes of memory, longing, and the passage of time.*
 
 ### Word Suggestions
 
 Consider these word pairs that complement your poem's tone:
 
-- **faihaz** (Germanic) / **enemy** (Latinate)
-  - *The Germanic word 'faihaz' carries a more ancient and raw emotion, while 'enemy' has a more formal and distant connotation. 'Faihaz' evokes a primal sense of danger and threat, enhancing the nostalgic longing for the simplicity and innocence of childhood.*
+- **hwī** (Germanic) / **ratiō** (Latinate)
+  - *The Germanic word 'hwī' emphasizes a sense of questioning and introspection, while the Latinate 'ratiō' conveys a more analytical and logical tone. 'Hwī' evokes a more emotional response, focusing on the 'why' of nostalgia and longing, while 'ratiō' adds a more intellectual layer to the exploration of memory and time.*
   - **Recommended:** Use the germanic version to enhance your poem's tone
 
-- **þankaz** (Germanic) / **gratitude** (Latinate)
-  - *The Germanic word 'þankaz' feels more personal and intimate, emphasizing a heartfelt sense of appreciation. On the other hand, 'gratitude' is more formal and intellectual. 'Þankaz' conveys a deeper connection to the memories of a childhood summer night.*
+- **neujaz** (Germanic) / **novel** (Latinate)
+  - *The Germanic word 'neujaz' conveys a sense of freshness and newness, which can enhance the theme of memory and longing for past experiences. On the other hand, the Latinate 'novel' may add a more literary or modern touch to the poem. 'Neujaz' brings a more organic and raw feeling to the emotions being portrayed.*
   - **Recommended:** Use the germanic version to enhance your poem's tone
 
-- **galaubją** (Germanic) / **creed** (Latinate)
-  - *The Germanic word 'galaubją' has a more grounded and instinctual quality, representing a fundamental belief or truth. In contrast, 'creed' has a religious or philosophical undertone. 'Galaubją' resonates with the innocence and purity of childhood nostalgia, making it a better choice for the poem's tone.*
+- **raidō** (Germanic) / **route** (Latinate)
+  - *The Germanic word 'raidō' focuses on the journey and path taken, emphasizing the passage of time and the nostalgia associated with it. In contrast, the Latinate 'route' may feel more structured and technical. 'Raidō' adds a poetic and romantic quality to the imagery of a country road in summer rain, while 'route' may feel more mundane and ordinary.*
   - **Recommended:** Use the germanic version to enhance your poem's tone
