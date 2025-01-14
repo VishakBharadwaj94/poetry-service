@@ -297,12 +297,13 @@ class PoetryBlogGenerator:
             for pair in prompt['word_suggestions']:
                 content.append(f"- **{pair['germanic']}** (Germanic) / **{pair['latinate']}** (Latinate)")
                 content.append(f"  - *{pair['usage_note']}*")
-                content.append(f"  - **Recommended:** {pair['recommended']} for this context")
+                if pair.get('recommended'):
+                    content.append(f"  - **Recommended:** {pair['recommended']} for this context")
                 content.append("")
 
-    # Write the file
-    filepath.write_text("\n".join(content))
-    logger.info(f"Saved blog post to {filepath}")
+        # Write the file
+        filepath.write_text("\n".join(content))
+        logger.info(f"Saved blog post to {filepath}")
     
     def generate_daily_post(self):
         """Generate and save today's poetry blog post."""
