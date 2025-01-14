@@ -127,78 +127,95 @@ class PoetryBlogGenerator:
             return "Analysis unavailable at this time."
 
     def get_writing_prompt(self) -> Dict[str, Any]:
-        """Generate a creative writing prompt using GPT."""
+        """Generate a creative writing prompt using GPT with contextually appropriate word pairs."""
         try:
             form = random.choice(self.poetic_forms)
             
-            # Select 3 random word pairs
-            with open('word-pairs.md', 'r') as f:
-                content = f.read()
-                # Extract table rows using simple parsing
-                rows = [line for line in content.split('\n') if line.strip().startswith('|') and not line.strip().startswith('|---')]
-                # Remove header row
-                rows = [row for row in rows if not 'Germanic Root' in row]
-                
-                # Select 3 random pairs
-                selected_pairs = random.sample(rows, 3)
-                word_pairs = []
-                for row in selected_pairs:
-                    cols = [col.strip() for col in row.split('|')[1:]]  # Split and remove empty first element
-                    word_pairs.append({
-                        'germanic': cols[2].strip(),
-                        'latinate': cols[3].strip()
-                    })
-            
-            prompt = f"""
-            Create an inspiring poetry writing prompt. Use this poetic form: {form}
-    
-            Include these word pairs in the prompt (use any of the words from each pair):
-            1. Germanic options: {word_pairs[0]['germanic']} | Latinate options: {word_pairs[0]['latinate']}
-            2. Germanic options: {word_pairs[1]['germanic']} | Latinate options: {word_pairs[1]['latinate']}
-            3. Germanic options: {word_pairs[2]['germanic']} | Latinate options: {word_pairs[2]['latinate']}
-    
-            Return the response in this exact JSON format:
+            # First, get a base prompt and analyze its tone
+            initial_prompt = f"""
+            Create a brief poetry writing prompt for the {form} form. 
+            Return it in JSON format:
             {{
                 "form": "{form}",
                 "structure": "Brief description of the form's structure",
                 "rhyme_scheme": "Description of rhyme scheme if applicable",
                 "prompt": "A creative and specific writing prompt",
-                "word_suggestions": [
-                    {{"germanic": "germanic word", "latinate": "latinate word", "usage_note": "Brief note on how these words differ in tone/usage"}},
-                    {{"germanic": "germanic word", "latinate": "latinate word", "usage_note": "Brief note on how these words differ in tone/usage"}},
-                    {{"germanic": "germanic word", "latinate": "latinate word", "usage_note": "Brief note on how these words differ in tone/usage"}}
-                ]
+                "tone_analysis": "Brief analysis of the prompt's emotional tone and themes"
             }}
-    
-            Make the prompt specific and evocative, incorporating the suggested word pairs naturally.
-            In the word_suggestions, provide specific usage notes about how the Germanic and Latinate versions convey different tones or contexts.
+            Make the prompt evocative and specific, focusing on sensory details and emotional depth.
             """
-    
-            response = self.client.chat.completions.create(
+
+            initial_response = self.client.chat.completions.create(
                 model="gpt-3.5-turbo",
-                messages=[{"role": "user", "content": prompt}],
-                max_tokens=800,
+                messages=[{"role": "user", "content": initial_prompt}],
+                max_tokens=500,
                 temperature=0.9
             )
             
-            # Parse the response as JSON
-            try:
-                prompt_data = json.loads(response.choices[0].message.content)
-                required_keys = ["form", "structure", "rhyme_scheme", "prompt", "word_suggestions"]
-                if not all(key in prompt_data for key in required_keys):
-                    raise ValueError("Missing required keys in prompt data")
-                return prompt_data
-            except json.JSONDecodeError as e:
-                logger.error(f"Error parsing prompt JSON: {str(e)}")
-                # Fallback to basic prompt if JSON parsing fails
-                return {
-                    "form": form,
-                    "structure": "Traditional form",
-                    "rhyme_scheme": "Variable",
-                    "prompt": "Write about a meaningful personal experience",
-                    "word_suggestions": []
-                }
-                
+            base_prompt = json.loads(initial_response.choices[0].message.content)
+            
+            # Read word pairs
+            with open('word-pairs.md', 'r') as f:
+                content = f.read()
+                rows = [line for line in content.split('\n') 
+                    if line.strip().startswith('|') and 
+                    not line.strip().startswith('|---') and 
+                    not 'Germanic Root' in line]
+
+            # Now ask GPT to select appropriate pairs based on the tone
+            selection_prompt = f"""
+            Given this poetry prompt and its tone:
+
+            Prompt: {base_prompt['prompt']}
+            Tone Analysis: {base_prompt['tone_analysis']}
+            Form: {form}
+
+            Select 3 word pairs that would best enhance this poem's themes and emotional resonance.
+            For each pair, carefully consider whether the Germanic or Latinate version would better serve 
+            the poem's mood, rhythm, and thematic goals.
+
+            Here are some available word pairs:
+            {random.sample(rows, 30)}
+
+            Return your response in this JSON format:
+            {{
+                "word_suggestions": [
+                    {{
+                        "germanic": "germanic word",
+                        "latinate": "latinate word",
+                        "usage_note": "Explain how these words differ in tone, context, and emotional impact",
+                        "recommended": "germanic or latinate - specify which version would work better for the tone"
+                    }},
+                    {{second pair}},
+                    {{third pair}}
+                ]
+            }}
+
+            For each pair:
+            1. Choose words that naturally fit the prompt's theme
+            2. Explain the subtle differences between the Germanic and Latinate versions
+            3. Make a clear recommendation based on the poem's tone and form
+            4. Consider how the words' sounds and syllables fit the poetic form
+            """
+
+            word_response = self.client.chat.completions.create(
+                model="gpt-3.5-turbo",
+                messages=[{"role": "user", "content": selection_prompt}],
+                max_tokens=800,
+                temperature=0.7
+            )
+
+            word_suggestions = json.loads(word_response.choices[0].message.content)
+            
+            # Combine all information
+            return {
+                "form": base_prompt["form"],
+                "structure": base_prompt["structure"],
+                "rhyme_scheme": base_prompt["rhyme_scheme"],
+                "prompt": base_prompt["prompt"],
+                "word_suggestions": word_suggestions["word_suggestions"]
+            }
+            
         except Exception as e:
             logger.error(f"Error getting writing prompt: {str(e)}")
             return {
@@ -208,7 +225,6 @@ class PoetryBlogGenerator:
                 "prompt": "Write about something that moved you today",
                 "word_suggestions": []
             }
-
     def select_daily_poems(self) -> List[Dict[str, Any]]:
         """Select 3 random poems for today."""
         selected_poems = []
@@ -282,8 +298,11 @@ class PoetryBlogGenerator:
         prompt = post_data["writing_prompt"]
         content.append("## Today's Writing Challenge")
         content.append("")
+        # Format each element on its own line
         content.append(f"**Form:** {prompt['form']}")
+        content.append("")
         content.append(f"**Structure:** {prompt['structure']}")
+        content.append("")
         content.append(f"**Rhyme Scheme:** {prompt['rhyme_scheme']}")
         content.append("")
         content.append(f"*Prompt: {prompt['prompt']}*")
@@ -297,14 +316,14 @@ class PoetryBlogGenerator:
             for pair in prompt['word_suggestions']:
                 content.append(f"- **{pair['germanic']}** (Germanic) / **{pair['latinate']}** (Latinate)")
                 content.append(f"  - *{pair['usage_note']}*")
-                if pair.get('recommended'):
-                    content.append(f"  - **Recommended:** {pair['recommended']} for this context")
+                if 'recommended' in pair:
+                    content.append(f"  - **Recommended:** Use the {pair['recommended']} version to enhance your poem's tone")
                 content.append("")
 
         # Write the file
         filepath.write_text("\n".join(content))
         logger.info(f"Saved blog post to {filepath}")
-    
+
     def generate_daily_post(self):
         """Generate and save today's poetry blog post."""
         poems = self.select_daily_poems()
