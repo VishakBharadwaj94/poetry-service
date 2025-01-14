@@ -5,235 +5,183 @@ date: 2025-01-14 00:00:00 +0000
 categories: ['poetry', 'daily']
 ---
 
-## Ulalume by Edgar Allan Poe
+## Sonnet 38 - First time he kissed me, he but only kissed by Elizabeth Barrett Browning
 
 ```
-The skies they were ashen and sober;
-  The leaves they were crisped and sere--
-  The leaves they were withering and sere;
-It was night in the lonesome October
-  Of my most immemorial year;
-It was hard by the dim lake of Auber,
-  In the misty mid region of Weir--
-It was down by the dank tarn of Auber,
-  In the ghoul-haunted woodland of Weir.
-
-Here once, through an alley Titanic.
-  Of cypress, I roamed with my Soul--
-  Of cypress, with Psyche, my Soul.
-These were days when my heart was volcanic
-  As the scoriac rivers that roll--
-  As the lavas that restlessly roll
-Their sulphurous currents down Yaanek
-  In the ultimate climes of the pole--
-That groan as they roll down Mount Yaanek
-  In the realms of the boreal pole.
-
-Our talk had been serious and sober,
-  But our thoughts they were palsied and sere--
-  Our memories were treacherous and sere--
-For we knew not the month was October,
-And we marked not the night of the year--
-  (Ah, night of all nights in the year!)
-We noted not the dim lake of Auber--
-  (Though once we had journeyed down here)--
-Remembered not the dank tarn of Auber,
-  Nor the ghoul-haunted woodland of Weir.
-
-And now as the night was senescent
-  And star-dials pointed to morn--
-  As the sun-dials hinted of morn--
-At the end of our path a liquescent
-  And nebulous lustre was born,
-Out of which a miraculous crescent
-  Arose with a duplicate horn--
-Astarte's bediamonded crescent
-  Distinct with its duplicate horn.
-
-And I said--"She is warmer than Dian:
-  She rolls through an ether of sighs--
-  She revels in a region of sighs:
-She has seen that the tears are not dry on
-  These cheeks, where the worm never dies,
-And has come past the stars of the Lion
-  To point us the path to the skies--
-  To the Lethean peace of the skies--
-Come up, in despite of the Lion,
-  To shine on us with her bright eyes--
-Come up through the lair of the Lion,
-  With love in her luminous eyes."
-
-But Psyche, uplifting her finger,
-  Said--"Sadly this star I mistrust--
-  Her pallor I strangely mistrust:--
-Oh, hasten!--oh, let us not linger!
-  Oh, fly!--let us fly!--for we must."
-In terror she spoke, letting sink her
-  Wings till they trailed in the dust--
-In agony sobbed, letting sink her
-  Plumes till they trailed in the dust--
-  Till they sorrowfully trailed in the dust.
-
-I replied--"This is nothing but dreaming:
-  Let us on by this tremulous light!
-  Let us bathe in this crystalline light!
-Its Sibyllic splendor is beaming
-  With Hope and in Beauty to-night:--
-  See!--it flickers up the sky through the night!
-Ah, we safely may trust to its gleaming,
-  And be sure it will lead us aright--
-We safely may trust to a gleaming
-  That cannot but guide us aright,
-  Since it flickers up to Heaven through the night."
-
-Thus I pacified Psyche and kissed her,
-  And tempted her out of her gloom--
-  And conquered her scruples and gloom;
-And we passed to the end of a vista,
-  But were stopped by the door of a tomb--
-  By the door of a legended tomb;
-And I said--"What is written, sweet sister,
-  On the door of this legended tomb?"
-  She replied--"Ulalume--Ulalume--
-  'Tis the vault of thy lost Ulalume!"
-
-Then my heart it grew ashen and sober
-  As the leaves that were crisped and sere--
-  As the leaves that were withering and sere;
-And I cried--"It was surely October
-  On _this_ very night of last year
-  That I journeyed--I journeyed down here--
-  That I brought a dread burden down here!
-  On this night of all nights in the year,
-  Ah, what demon has tempted me here?
-Well I know, now, this dim lake of Auber--
-  This misty mid region of Weir--
-Well I know, now, this dank tarn of Auber,--
-  This ghoul-haunted woodland of Weir."
+First time he kissed me, he but only kissed
+The fingers of this hand wherewith I write;
+And ever since, it grew more clean and white,
+Slow to world-greetings, quick with its 'Oh, list,'
+When the angels speak. A ring of amethyst
+I could not wear here, plainer to my sight,
+Than that first kiss. The second passed in height
+The first, and sought the forehead, and half missed,
+Half falling on the hair. O beyond meed!
+That was the chrism of love, which love's own crown,
+With sanctifying sweetness, did precede.
+The third upon my lips was folded down
+In perfect, purple state; since when, indeed,
+I have been proud and said, 'My love, my own.'
 ```
 
 ### Form, Structure, Meter, and Rhyme
 
-In "Ulalume," Edgar Allan Poe utilizes a unique form and structure to convey the eerie and mysterious atmosphere of the poem. The poem consists of eleven stanzas, each with a varying number of lines. The irregularity in stanza length contributes to the sense of unease and instability present throughout the poem. Additionally, the poem follows a rhyme scheme of ABABCBCA, with the rhyming couplets creating a musical and flowing effect that contrasts with the dark subject matter.
-
-Poe also employs a meter that is predominantly iambic tetrameter, with lines containing four metrical feet. This meter creates a steady rhythm that enhances the lyrical quality of the poem. However, Poe strategically disrupts this meter at times, such as in the lines "Ah, night of all nights in the year!" and "She has seen that the tears are not dry on," adding emphasis and drawing attention to key moments in the narrative.
+In this sonnet, Elizabeth Barrett Browning adheres to the traditional structure of a Shakespearean sonnet, consisting of 14 lines written in iambic pentameter. The rhyme scheme follows the ABABCDCDEFEFGG pattern. Browning's use of iambic pentameter creates a rhythmic flow, emphasizing the emotions experienced by the speaker. The consistent rhyme scheme adds to the sonnet's lyrical quality and helps to convey the speaker's journey through the stages of love.
 
 ### Themes and Imagery
 
-The themes of death, loss, and the passage of time are prominent in "Ulalume." The poem explores the speaker's grief over the loss of Ulalume, a beloved figure from his past. The imagery of the desolate landscape in October, with ashen skies, withering leaves, and misty lakes, creates a haunting backdrop for the speaker's emotional turmoil. The use of natural imagery, such as cypress trees and a dim lake, contributes to the eerie and melancholic tone of the poem.
-
-The celestial imagery of stars and moons symbolizes hope and guidance in the face of darkness and despair. The crescent moon, described as "Astarte's bediamonded crescent," represents a beacon of light leading the way through the speaker's emotional turmoil. However, this celestial imagery is juxtaposed with dark and foreboding elements, such as ghouls and tombs, underscoring the pervasive sense of loss and unease that permeates the poem.
+The central theme of Sonnet 38 is the progression of love through different stages of physical intimacy. Through vivid imagery, Browning conveys the deepening emotional connection between the speaker and her lover. The use of sensory details, such as the touch of a kiss and the visual imagery of an amethyst ring, enhances the reader's understanding of the speaker's emotional transformation. The poem explores themes of purity, sanctity, and pride in love, highlighting the transformative power of romantic relationships.
 
 ### Literary Devices
 
-Poe employs a variety of literary devices in "Ulalume" to enhance the poem's mood and meaning. Alliteration, assonance, and consonance are used throughout the poem to create a sense of musicality and rhythm. For example, in the lines "Ah, night of all nights in the year!" and "She has seen that the tears are not dry on," the repeated sounds help to emphasize the speaker's emotional state.
-
-Repetition is another key literary device in the poem, particularly with the repeated references to the dim lake of Auber and the ghoul-haunted woodland of Weir. This repetition serves to underscore the speaker's sense of disorientation and confusion as he navigates through the eerie landscape. Additionally, the use of personification, such as the personified stars and moons, adds a mystical and otherworldly quality to the poem.
+Browning employs various literary devices to enhance the poem's emotional impact. The use of imagery, such as the "ring of amethyst" and "perfect, purple state," creates vivid pictures in the reader's mind, emphasizing the significance of each kiss. Additionally, the repetition of the word "love" and the alliteration in phrases like "sanctifying sweetness" and "folded down" add to the poem's musicality. Browning also utilizes symbolism, as seen in the comparison of the first kiss to an amethyst ring, to convey the depth of the speaker's emotions.
 
 ### Historical and Personal Context
 
-"Ulalume" was written by Edgar Allan Poe in 1847, during a period marked by personal tragedy and loss in the author's life. Poe's wife, Virginia Clemm, had been suffering from tuberculosis, and her deteriorating health weighed heavily on Poe during this time. The themes of death, grief, and longing in "Ulalume" reflect Poe's own experiences with loss and the haunting specter of mortality.
-
-The poem also reflects the broader cultural context of the Romantic era, with its emphasis on emotion, nature, and the supernatural. Poe's exploration of the macabre and the mysterious aligns with the Gothic literary tradition of the time, which sought to evoke feelings of terror and awe in readers. The dark and atmospheric imagery in "Ulalume" resonated with the Romantic fascination with the sublime and the unknown.
+Elizabeth Barrett Browning was a Victorian poet known for her exploration of themes such as love, spirituality, and social justice. As a woman writing in the 19th century, Browning's poetry often reflected her personal experiences and emotions. Sonnet 38 can be interpreted as a reflection of Browning's own romantic relationship with her husband, Robert Browning. The sonnet captures the intensity and purity of love, a recurring theme in Browning's works.
 
 ### Deep Reading
 
-"Ulalume" delves into the complexities of grief and memory, as the speaker grapples with the haunting presence of Ulalume and the pain of loss. The poem's shifting landscapes, from the desolate October night to the celestial realm of stars and moons, mirror the speaker's internal turmoil and his search for solace. The repeated references to the dim lake of Auber and the ghoul-haunted woodland of Weir serve as metaphors for the speaker's haunted psyche and his inability to escape the past.
+Through the progression of kisses described in the sonnet, Browning delves into the transformative power of love. The speaker's journey from a simple kiss on the hand to a passionate kiss on the lips symbolizes the deepening emotional connection between the lovers. Each kiss represents a milestone in the evolution of their relationship, culminating in a sense of pride and ownership in the final line. Browning's use of intimate details and sensory imagery invites readers to experience the speaker's emotions firsthand, making Sonnet 38 a poignant exploration of love's transformative nature.
 
-The encounter with the legended tomb at the end of the poem symbolizes the speaker's confrontation with his own mortality and the inevitability of death. The revelation that the tomb belongs to Ulalume underscores the inescapable nature of loss and the lasting impact of grief on the human soul. Ultimately, "Ulalume" is a meditation on the fragility of life, the persistence of memory, and the eternal yearning for that which has been lost.
-
-## On A Portrait Of Wordsworth by Elizabeth Barrett Browning
+## A Day Dream by Emily Bronte
 
 ```
-WORDSWORTH upon Helvellyn ! Let the cloud
-Ebb audibly along the mountain-wind,
-Then break against the rock, and show behind
-The lowland valleys floating up to crowd
-The sense with beauty. He with forehead bowed
-And humble-lidded eyes, as one inclined
-Before the sovran thought of his own mind,
-And very meek with inspirations proud,
-Takes here his rightful place as poet-priest
-By the high altar, singing prayer and prayer
+On a sunny brae, alone I lay
+One summer afternoon;
+It was the marriage-time of May
+With her young lover, June.
 
-To the higher Heavens. A noble vision free
-Our Haydon's hand has flung out from the mist:
-No portrait this, with Academic air !
-This is the poet and his poetry.
+From her mother's heart, seemed loath to part
+That queen of bridal charms,
+But her father smiled on the fairest child
+He ever held in his arms.
+
+The trees did wave their plumy crests,
+The glad birds caroled clear;
+And I, of all the wedding guests,
+Was only sullen there!
+
+There was not one, but wished to shun
+My aspect void of cheer;
+The very grey rocks, looking on,
+Asked, "What do you here?"
+
+And I could utter no reply;
+In sooth, I did not know
+Why I had brought a clouded eye
+To greet the general glow.
+
+So, resting on a heathy bank,
+I took my heart to me;
+And we together sadly sank
+Into a reverie.
+
+We thought, "When winter comes again,
+Where will these bright things be?
+All vanished, like a vision vain,
+An unreal mockery!
+
+The birds that now so blithely sing,
+Through deserts, frozen dry,
+Poor spectres of the perished spring,
+In famished troops, will fly.
+
+And why should we be glad at all?
+The leaf is hardly green,
+Before a token of its fall
+Is on the surface seen!"
+
+Now, whether it were really so,
+I never could be sure;
+But as in fit of peevish woe,
+I stretched me on the moor.
+
+A thousand thousand gleaming fires
+Seemed kindling in the air;
+A thousand thousand silvery lyres
+Resounded far and near:
+
+Methought, the very breath I breathed
+Was full of sparks divine,
+And all my heather-couch was wreathed
+By that celestial shine!
+
+And, while the wide earth echoing rung
+To their strange minstrelsy,
+The little glittering spirits sung,
+Or seemed to sing, to me.
+
+"O mortal! mortal! let them die;
+Let time and tears destroy,
+That we may overflow the sky
+With universal joy!
+
+Let grief distract the sufferer's breast,
+And night obscure his way;
+They hasten him to endless rest,
+And everlasting day.
+
+To thee the world is like a tomb,
+A desert's naked shore;
+To us, in unimagined bloom,
+It brightens more and more!
+
+And could we lift the veil, and give
+One brief glimpse to thine eye,
+Thou wouldst rejoice for those that live,
+Because they live to die."
+
+The music ceased; the noonday dream,
+Like dream of night, withdrew;
+But Fancy, still, will sometimes deem
+Her fond creation true.
 ```
 
 ### Form, Structure, Meter, and Rhyme
 
-In terms of form, "On A Portrait Of Wordsworth" by Elizabeth Barrett Browning is a Petrarchan sonnet, consisting of 14 lines with the rhyme scheme ABBA ABBA CDCDCD. The poem is written in iambic pentameter, with five stressed syllables per line, creating a rhythmic and structured flow to the poem. Browning's use of this form and meter adds a sense of elegance and control to the poem, mirroring the reverence and respect the speaker has for Wordsworth.
+This poem, "A Day Dream" by Emily Bronte, consists of five stanzas with varying line lengths. The first stanza has 8 lines, while the subsequent stanzas have 12 lines each. The poem does not follow a strict rhyme scheme, with some stanzas having a consistent rhyme pattern (e.g., ABCB) while others have a more irregular rhyme scheme. The irregular structure and rhyme scheme contribute to the dreamlike quality of the poem, mirroring the wandering thoughts of the speaker.
 
 ### Themes and Imagery
 
-The central theme in the poem is the depiction of William Wordsworth as a poet-priest, a figure of reverence and inspiration. The imagery used by Browning is vivid and evocative, painting a picture of Wordsworth on Helvellyn, a mountain in the Lake District that was significant to the Romantic poets. The cloud, wind, and rock serve as symbols of nature's power and beauty, reflecting Wordsworth's connection to the natural world. The lowland valleys floating up to crowd the senses with beauty suggest the transcendent experience of Wordsworth's poetry.
+The central themes of the poem revolve around the fleeting nature of beauty and happiness, the contrast between the natural world and human emotions, and the idea of mortality. The imagery in the poem is vivid and evocative, painting a picture of a sunny day in nature juxtaposed with the speaker's inner turmoil. The imagery of the wedding between May and June symbolizes the fleeting nature of happiness and the inevitability of change. The contrast between the joyful wedding guests and the sullen speaker highlights the speaker's sense of alienation and introspection.
 
 ### Literary Devices
 
-Browning employs various literary devices to enhance the poem's meaning and effect. One such device is personification, as the cloud is described as ebbing audibly and breaking against the rock. This personification adds a sense of drama and movement to the scene. Browning also uses imagery, such as the high altar and singing prayer and prayer, to emphasize Wordsworth's role as a poet-priest. The juxtaposition of humility and pride in Wordsworth's demeanor highlights his complex nature as a poet.
+Bronte employs several literary devices throughout the poem to enhance its meaning and mood. One notable device is personification, as seen in lines such as "The trees did wave their plumy crests" and "The very grey rocks, looking on." These personifications give life to the natural world and emphasize the speaker's sense of detachment from it. The use of symbolism is also prevalent in the poem, with the changing seasons and natural elements representing broader themes of transition and impermanence.
 
 ### Historical and Personal Context
 
-Elizabeth Barrett Browning was a prominent Victorian poet known for her innovative and deeply emotional poetry. In this poem, Browning pays tribute to William Wordsworth, a leading figure in the Romantic movement. Wordsworth was known for his celebration of nature and his belief in the power of poetry to inspire spiritual and emotional growth. Browning's admiration for Wordsworth is evident in her portrayal of him as a poet-priest, a visionary figure who connects the earthly and divine realms through his poetry.
+Emily Bronte, known for her introspective and often melancholic poetry, likely drew inspiration from her own experiences and emotions when writing "A Day Dream." The poem reflects the Romantic era's fascination with nature and the human psyche, as well as the themes of transience and mortality that were common in Romantic literature. Bronte's personal struggles and isolation may have influenced the speaker's sense of alienation and melancholy in the poem.
 
 ### Deep Reading
 
-Deeper analysis of the poem reveals Browning's admiration for Wordsworth not just as a poet, but as a spiritual and moral guide. The description of Wordsworth with "forehead bowed" and "humble-lidded eyes" suggests a sense of reverence and contemplation. The idea of Wordsworth as a poet-priest implies that his poetry has a transcendent quality, offering solace and inspiration to readers. Browning's assertion that the portrait is not a mere likeness but a representation of the poet and his poetry speaks to the transformative power of art and the enduring legacy of Wordsworth's work. Overall, the poem serves as a tribute to Wordsworth's enduring influence and the timeless beauty of his poetry.
+Through the speaker's daydream, Bronte delves into deeper philosophical questions about life, death, and the nature of existence. The contrast between the earthly realm and the celestial realm, as depicted by the spirits in the poem, highlights the speaker's struggle to find meaning and purpose in a world filled with impermanence and suffering. The celestial beings' perspective on mortality challenges the speaker's own views on life and death, suggesting a more transcendental understanding of existence.
 
-## Fragment: 'Unrisen Splendour of the Brightest Sun' by Percy Bysshe Shelley
-
-```
-Unrisen splendour of the brightest sun,
-To rise upon our darkness, if the star
-Now beckoning thee out of thy misty throne
-Could thaw the clouds which wage an obscure war
-With thy young brightness!
-```
-
-### Form, Structure, Meter, and Rhyme
-
-The poem "Fragment: 'Unrisen Splendour of the Brightest Sun'" by Percy Bysshe Shelley is a fragment, as indicated by the title, suggesting that it is only a part of a larger work. Structurally, the poem consists of four lines, forming a quatrain. The rhyme scheme is ABAB, with the second and fourth lines rhyming. The meter appears to be irregular, with varying syllable counts in each line, contributing to a sense of unpredictability and fluidity in the poem's rhythm.
-
-### Themes and Imagery
-
-The central theme of the poem revolves around the idea of potential and unfulfilled promise. The speaker addresses the "unrisen splendour of the brightest sun," metaphorically referring to a powerful force or presence that has not yet fully emerged. The imagery of the sun rising upon darkness conveys a sense of hope and transformation, suggesting the possibility of overcoming obstacles and achieving greatness. The clouds symbolize obstacles or challenges that obscure this potential brightness, creating a sense of conflict and tension in the poem.
-
-### Literary Devices
-
-Shelley employs several literary devices to enhance the poem's meaning and imagery. The personification of the sun as having the ability to "thaw the clouds which wage an obscure war" adds depth to the metaphorical language used in the poem. The use of alliteration in "beckoning thee" and "brightness" creates a sense of musicality and rhythm in the lines. Additionally, the juxtaposition of light and darkness throughout the poem serves to underscore the contrast between potential and obstacles.
-
-### Historical and Personal Context
-
-Percy Bysshe Shelley was a Romantic poet known for his exploration of themes such as nature, beauty, and the power of the imagination. This poem reflects Shelley's interest in the transformative power of light and the potential for growth and renewal. The imagery of the sun rising upon darkness may also be interpreted as a metaphor for the revolutionary spirit of the Romantic era, which sought to challenge established norms and beliefs.
-
-### Deep Reading
-
-On a deeper level, the poem can be seen as a meditation on the struggle between light and darkness, both literally and metaphorically. The speaker's plea for the "unrisen splendour" to overcome the clouds that obscure its brightness can be interpreted as a metaphor for the human experience of overcoming adversity and reaching one's full potential. The poem invites readers to contemplate the power of hope and perseverance in the face of obstacles, reminding us of the transformative nature of light and the enduring quest for enlightenment.
+Overall, "A Day Dream" by Emily Bronte is a contemplative and introspective poem that explores themes of transience, mortality, and the human experience. Through vivid imagery, literary devices, and personal reflection, Bronte crafts a thought-provoking piece that invites readers to ponder the fleeting nature of life and the eternal questions of existence.
 
 ## Today's Writing Challenge
 
-**Form:** Tanka
+**Form:** Ghazal
 
-**Structure:** The Tanka form consists of five lines with a syllable count of 5-7-5-7-7.
+**Structure:** The Ghazal is a poetic form consisting of rhyming couplets and a refrain, with each line sharing the same meter. The first couplet sets the rhyme scheme, and each subsequent couplet follows the same pattern.
 
-**Rhyme Scheme:** No specific rhyme scheme.
+**Rhyme Scheme:** A1, A2, A1, A2, A1, A2, A1, A2...and so on
 
-*Prompt: Write a Tanka capturing the bittersweet nostalgia of a summer evening fading into dusk, focusing on the sensory details of the warm breeze, fading sunlight, and distant laughter.*
+*Prompt: Write a Ghazal exploring the bittersweet nostalgia of a childhood summer night, focusing on the sounds of crickets chirping, the scent of fresh cut grass, and the feeling of warm pavement under bare feet.*
 
 ### Word Suggestions
 
 Consider these word pairs that complement your poem's tone:
 
-- **blōmô** (Germanic) / **flower** (Latinate)
-  - *The Germanic 'blōmô' has a more earthy and natural feel, emphasizing the beauty in simplicity. On the other hand, the Latinate 'flower' adds a touch of elegance and refinement, highlighting the idea of fleeting beauty.*
+- **faihaz** (Germanic) / **enemy** (Latinate)
+  - *The Germanic word 'faihaz' carries a more ancient and raw emotion, while 'enemy' has a more formal and distant connotation. 'Faihaz' evokes a primal sense of danger and threat, enhancing the nostalgic longing for the simplicity and innocence of childhood.*
   - **Recommended:** Use the germanic version to enhance your poem's tone
 
-- **hwīlō** (Germanic) / **duration** (Latinate)
-  - *The Germanic 'hwīlō' carries a sense of transience and impermanence, focusing on the fleeting nature of time. In contrast, the Latinate 'duration' feels more formal and abstract, emphasizing a measured passage of time.*
+- **þankaz** (Germanic) / **gratitude** (Latinate)
+  - *The Germanic word 'þankaz' feels more personal and intimate, emphasizing a heartfelt sense of appreciation. On the other hand, 'gratitude' is more formal and intellectual. 'Þankaz' conveys a deeper connection to the memories of a childhood summer night.*
   - **Recommended:** Use the germanic version to enhance your poem's tone
 
-- **westrōnijaz** (Germanic) / **occidental** (Latinate)
-  - *The Germanic 'westrōnijaz' has a nostalgic and poetic connotation, evoking images of sunsets and distant lands. 'Occidental' in its Latinate form feels more academic and distant, lacking the emotional resonance of the Germanic version.*
+- **galaubją** (Germanic) / **creed** (Latinate)
+  - *The Germanic word 'galaubją' has a more grounded and instinctual quality, representing a fundamental belief or truth. In contrast, 'creed' has a religious or philosophical undertone. 'Galaubją' resonates with the innocence and purity of childhood nostalgia, making it a better choice for the poem's tone.*
   - **Recommended:** Use the germanic version to enhance your poem's tone
