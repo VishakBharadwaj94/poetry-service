@@ -302,3 +302,31 @@ body {
     font-size: 0.95rem;
     color: var(--secondary-color);
 }
+
+/* Pagination styles */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0;
+    padding: 2rem 0;
+    border-top: 1px solid var(--border-color);
+    font-family: var(--heading-font);
+}
+
+.pagination a {
+    color: var(--link-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.pagination a:hover {
+    background-color: var(--code-bg);
+}
+
+.page-info {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
