@@ -24,3 +24,13 @@ collections:
   posts:
     output: true
     permalink: /:year/:month/:day/:title/
+
+  # Pagination settings
+paginate: 10  # Number of posts per page
+paginate_path: "/page:num/"
+
+# Add jekyll-paginate plugin
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate  # Add this
