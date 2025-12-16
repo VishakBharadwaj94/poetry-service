@@ -1,5 +1,11 @@
 # Daily Poetry Blog Generator
 
+## 📢 Project Status: Retired (December 2025)
+
+**This project has completed its journey and is no longer actively maintained.**
+
+## Original Description
+
 An automated poetry blog that publishes daily poems with AI-powered analysis using GitHub Actions and GitHub Pages. Each day, the system selects three random poems from classic authors, generates detailed literary analysis using GPT-3.5, and creates a new blog post with a creative writing prompt.
 
 ## Features

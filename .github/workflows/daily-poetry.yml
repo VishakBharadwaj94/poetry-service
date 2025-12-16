@@ -1,9 +1,10 @@
-name: Daily Poetry Blog Generator
+name: Daily Poetry Blog Generator (DISABLED)
 
 on:
-  schedule:
-    - cron: '0 9 * * *'
-  workflow_dispatch:  # Allow manual trigger
+  # Workflow disabled - project retired December 2025
+  # schedule:
+  #   - cron: '0 9 * * *'
+  workflow_dispatch:  # Allow manual trigger (for archival purposes only)
 
 jobs:
   generate-post:
