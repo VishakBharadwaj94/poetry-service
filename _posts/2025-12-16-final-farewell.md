@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Fond Farewell - The End of Our Poetry Journey
-date: 2025-12-17 00:00:00 +0000
+date: 2025-12-16 12:00:00 +0000
 categories: ['poetry', 'announcement']
 ---
 
